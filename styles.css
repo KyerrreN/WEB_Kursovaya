@@ -6,6 +6,9 @@
 /* ---------------------------------------------------------------------------- */
 /*                      Нужные стили для адаптива */
 /* ---------------------------------------------------------------------------- */
+body {
+    margin: 0px;
+}
 .wrapper {
     display: flex;
     min-height: 100%;
@@ -230,6 +233,9 @@
     /* ---------------------------------------------------------------------------- */
     .header-frame {
         height: 270px;
+        box-shadow: none;
+        margin: 0;
+        padding: 0;
     }
     .header-content {
         flex-direction: column;
@@ -248,23 +254,35 @@
     /*                                  main */
     /* ---------------------------------------------------------------------------- */
     .main-frame {
-        height: 660px;
+        padding: 0;
+        margin: 0;
+        height: 590px;
+        display: flex;
+        justify-content: center;
     }
     .main-content {
-        margin-left: 0px;
-        margin-top: 0px;
-        padding-top: 40px;
+        max-width: 320px;
+        height: 1500px;
+        padding: 0;
+        padding-top: 10px;
+        margin: 0;
+        display: flex;
+        align-items: center;
+    }
+    .main-content-company {
+        text-align: center;
     }
     .main-content-header {
-        width: 40%;
-        font-size: 50px;
+        width: 100%;
+        font-size: 35px;
+        text-align: center;
     }
     .main-content-span {
-        width: 60%;
+        width: 90%;
     }
 }
 
-@media (max-width: 419px) {
+@media (max-width: 200px) {
     .container {
         max-width: 320px;
     }
