@@ -264,6 +264,48 @@ body {
     font-weight: 400;
     line-height: 14px;
 }
+
+/* ---------------------------------------------------------------------------- */
+/*                                  first-example */
+/* ---------------------------------------------------------------------------- */
+.first-example-frame {
+    width: 100%;
+    height: 600px;
+    flex-shrink: 0;
+
+    background-image: url(Pictures/FirstExample/IMAGE.svg);
+    background-repeat: no-repeat;
+}
+
+.first-example-content {
+    display: inline-flex;
+    height: 600px;
+    padding-left: 1080px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    flex-shrink: 0;
+}
+.first-example-content-name {
+    width: 137px;
+    color: #403e3b;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.first-example-content-desc {
+    width: 203px;
+    color: #645c55;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+}
 /* ---------------------------------------------------------------------------- */
 /*                                  Медиа запросы */
 /* ---------------------------------------------------------------------------- */
@@ -276,6 +318,15 @@ body {
     /* ---------------------------------------------------------------------------- */
     .header-content {
         gap: 10px;
+    }
+    /* ---------------------------------------------------------------------------- */
+    /*                                  first-example */
+    /* ---------------------------------------------------------------------------- */
+    .first-example-content {
+        padding-left: 800px;
+    }
+    .first-example-frame {
+        background-position-x: 50%;
     }
 }
 @media (max-width: 992px) {
@@ -311,6 +362,15 @@ body {
         margin-top: 0px;
         align-items: center;
         gap: 20px;
+    }
+    /* ---------------------------------------------------------------------------- */
+    /*                                  first-example */
+    /* ---------------------------------------------------------------------------- */
+    .first-example-frame {
+        background-position-x: 70%;
+    }
+    .first-example-content {
+        padding-left: 500px;
     }
 }
 @media (max-width: 767px) {
@@ -385,6 +445,16 @@ body {
     }
     .firm-content-desc-author {
         padding: 0;
+    }
+    /* ---------------------------------------------------------------------------- */
+    /*                                  first-example */
+    /* ---------------------------------------------------------------------------- */
+    .first-example-frame {
+        background-position-x: 75%;
+    }
+    .first-example-content {
+        max-width: 420px;
+        padding-left: 140px;
     }
 }
 @media (max-width: 320px) {
