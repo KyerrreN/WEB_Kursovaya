@@ -1494,6 +1494,10 @@ body {
     .team-content-people-first {
         width: 280px;
     }
+    #team-content-people-frame-adaptive {
+        position: relative;
+        top: 19px;
+    }
     /* ---------------------------------------------------------------------------- */
     /*                                  above-footer */
     /* ---------------------------------------------------------------------------- */
