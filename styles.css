@@ -878,6 +878,74 @@ body {
     flex-direction: column;
     gap: 39px;
 }
+
+/* ---------------------------------------------------------------------------- */
+/*                                  above-footer */
+/* ---------------------------------------------------------------------------- */
+.above-footer-frame {
+    width: 100%;
+    height: 314px;
+    flex-shrink: 0;
+    background: #cec4bc;
+}
+.above-footer-content {
+    display: flex;
+    width: 1168px;
+    justify-content: center;
+    align-items: center;
+    gap: 447px;
+
+    position: relative;
+    top: 100px;
+    left: 135px;
+}
+.above-footer-content-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+.above-footer-content-text-header {
+    color: #645c55;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    height: 13px;
+}
+.above-footer-content-text-desc {
+    color: #1b1a1a;
+    font-family: Poppins;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 42px;
+}
+.above-footer-content-button {
+    width: 145px;
+    height: 46px;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 0;
+    border: none;
+    font: inherit;
+    background-color: transparent;
+    cursor: pointer;
+}
+.above-footer-content-button-text {
+    width: 105px;
+    color: #1b1a1a;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.4px;
+}
 /* ---------------------------------------------------------------------------- */
 /*                                  Медиа запросы */
 /* ---------------------------------------------------------------------------- */
@@ -953,6 +1021,22 @@ body {
     }
     .team-content-people {
         gap: 10px;
+    }
+    /* ---------------------------------------------------------------------------- */
+    /*                                  above-footer */
+    /* ---------------------------------------------------------------------------- */
+    .above-footer-frame {
+        display: flex;
+        justify-content: center;
+    }
+    .above-footer-content {
+        top: 0;
+        left: 0;
+        gap: 30px;
+        flex-direction: column;
+    }
+    .above-footer-content-text {
+        align-items: center;
     }
 }
 @media (max-width: 992px) {
@@ -1100,6 +1184,18 @@ body {
     }
     .team-content-people-first {
         width: 300px;
+    }
+    /* ---------------------------------------------------------------------------- */
+    /*                                  above-footer */
+    /* ---------------------------------------------------------------------------- */
+    .above-footer-content {
+        width: 680px;
+    }
+    .above-footer-content-text-header {
+        height: 20px;
+    }
+    .above-footer-content-text-desc {
+        text-align: center;
     }
 }
 @media (max-width: 767px) {
@@ -1321,6 +1417,15 @@ body {
     }
     .team-content-people-first {
         width: 280px;
+    }
+    /* ---------------------------------------------------------------------------- */
+    /*                                  above-footer */
+    /* ---------------------------------------------------------------------------- */
+    .above-footer-content-text-header {
+        height: 40px;
+    }
+    .above-footer-frame {
+        height: 380px;
     }
 }
 @media (max-width: 320px) {
