@@ -2,7 +2,80 @@
     font-family: "Poppins";
     src: url(Fonts/Poppins.ttf);
 }
+.off-screen-menu {
+    background-color: white;
+    height: 100vh;
+    width: 100%;
+    max-width: 300px;
+    position: fixed;
+    top: 0;
+    right: -400px;
+    z-index: 10;
 
+    /* display: flex; */
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+    font-size: 20px;
+    font-family: Poppins;
+    transition: 0.3s ease;
+}
+
+.off-screen-menu a {
+    text-decoration: none;
+}
+.off-screen-menu.active {
+    right: 0;
+}
+
+nav.container {
+    display: none;
+    z-index: 10;
+    /* display: flex; */
+    background-color: white;
+}
+
+.ham-menu {
+    height: 50px;
+    width: 50px;
+    margin-left: auto;
+    position: relative;
+}
+
+.ham-menu span {
+    height: 5px;
+    width: 100%;
+    background-color: black;
+    border-radius: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.3s ease;
+}
+
+.ham-menu span:nth-child(1) {
+    top: 25%;
+}
+
+.ham-menu span:nth-child(3) {
+    top: 75%;
+}
+
+.ham-menu.active span:nth-child(1) {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+.ham-menu.active span:nth-child(2) {
+    opacity: 0;
+}
+.ham-menu.active span:nth-child(3) {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
 /* ---------------------------------------------------------------------------- */
 /*                      Нужные стили для адаптива */
 /* ---------------------------------------------------------------------------- */
@@ -1279,8 +1352,21 @@ body {
         max-width: 420px;
     }
     /* ---------------------------------------------------------------------------- */
+    /*                                  hamburger menu */
+    /* ---------------------------------------------------------------------------- */
+    .off-screen-menu {
+        display: flex;
+    }
+
+    nav.container {
+        display: flex;
+    }
+    /* ---------------------------------------------------------------------------- */
     /*                                  header */
     /* ---------------------------------------------------------------------------- */
+    header {
+        display: none;
+    }
     .header-frame {
         height: 270px;
         box-shadow: none;
