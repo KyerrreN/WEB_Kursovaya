@@ -1207,7 +1207,7 @@ body {
     /* ---------------------------------------------------------------------------- */
     .firm-frame {
         margin-top: 20px;
-        height: 650px;
+        height: 700px;
     }
     .firm-content {
         flex-direction: column;
@@ -1427,7 +1427,7 @@ body {
         max-width: 420px;
     }
     .firm-frame {
-        height: 850px;
+        height: 980px;
     }
     .firm-content-desc-text {
         width: 320px;
@@ -1591,6 +1591,10 @@ body {
     /* ---------------------------------------------------------------------------- */
     .above-footer-content-text-header {
         height: 40px;
+    }
+
+    .above-footer-content-text-desc {
+        max-width: 350px;
     }
     .above-footer-frame {
         height: 380px;
