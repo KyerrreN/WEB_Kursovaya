@@ -12,13 +12,12 @@
     right: -400px;
     z-index: 10;
 
-    /* display: flex; */
     display: none;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    gap: 30px;
+    gap: 20px;
     font-size: 20px;
     font-family: Poppins;
     transition: 0.3s ease;
@@ -34,7 +33,6 @@
 nav.container {
     display: none;
     z-index: 10;
-    /* display: flex; */
     background-color: white;
 }
 
@@ -53,7 +51,7 @@ nav.container {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-100%, -50%);
     transition: 0.3s ease;
 }
 
@@ -67,14 +65,14 @@ nav.container {
 
 .ham-menu.active span:nth-child(1) {
     top: 50%;
-    transform: translate(-50%, -50%) rotate(45deg);
+    transform: translate(-100%, -50%) rotate(45deg);
 }
 .ham-menu.active span:nth-child(2) {
     opacity: 0;
 }
 .ham-menu.active span:nth-child(3) {
     top: 50%;
-    transform: translate(-50%, -50%) rotate(-45deg);
+    transform: translate(-100%, -50%) rotate(-45deg);
 }
 /* ---------------------------------------------------------------------------- */
 /*                      Нужные стили для адаптива */
