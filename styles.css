@@ -25,6 +25,10 @@
 
 .off-screen-menu a {
     text-decoration: none;
+    color: black;
+}
+.off-screen-menu a.header-content-nav-rectangle {
+    color: white;
 }
 .off-screen-menu.active {
     right: 0;
