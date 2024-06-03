@@ -43,6 +43,20 @@ body {
     background-color: #f7efeb;
 
     border: 3px solid #f7efeb;
+
+    font-family: Poppins;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.auth-left-content {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
 }
 .auth-right {
     width: 33.33%;
@@ -53,6 +67,46 @@ body {
     background-color: #f7efeb;
 
     border-left: 0;
+    font-family: Poppins;
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.auth-left-company {
+    font-size: 30px;
+}
+
+.auth-left-desc {
+    width: 100%;
+}
+
+.auth-right-button {
+    width: 300px;
+    height: 150px;
+    font-family: Poppins;
+    font-size: 32px;
+
+    border: 1px solid black;
+    border-radius: 5%;
+    background-color: #ece7e4;
+}
+
+@keyframes auth-right-button-hover {
+    0% {
+        border-width: 1px;
+    }
+    100% {
+        border-width: 3px;
+        font-size: 35px;
+    }
+}
+.auth-right-button:hover {
+    animation: auth-right-button-hover 0.1s ease-in-out forwards;
+    cursor: pointer;
 }
 /* ---------------------------------------------------------------------------- */
 /*                      login */
@@ -63,8 +117,6 @@ body {
     display: flex;
     flex-direction: column;
     gap: 5px;
-    /* border: 3px solid #ece7e4;
-    border-radius: 2%; */
 
     background-color: #ece7e4;
 
