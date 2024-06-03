@@ -2,6 +2,9 @@
     font-family: "Poppins";
     src: url(Fonts/Poppins.ttf);
 }
+/* ---------------------------------------------------------------------------- */
+/*                      Бургер меню */
+/* ---------------------------------------------------------------------------- */
 .off-screen-menu {
     background-color: white;
     height: 100vh;
@@ -146,6 +149,10 @@ body {
 }
 .header-content-nav-contant {
     width: 64px;
+}
+.header-content-nav-login {
+    text-decoration: none;
+    color: black;
 }
 .header-content-nav-rectangle {
     width: 155px;
