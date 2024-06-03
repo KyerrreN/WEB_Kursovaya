@@ -1,6 +1,6 @@
 @font-face {
     font-family: "Poppins";
-    src: url(Fonts/Poppins.ttf);
+    src: url(../Fonts/Poppins.ttf);
 }
 /* ---------------------------------------------------------------------------- */
 /*                      Нужные стили для адаптива */
@@ -11,21 +11,48 @@ body {
 .wrapper {
     display: flex;
     min-height: 100%;
-    overflow: hidden;
+    /* overflow: hidden; */
     flex-direction: column;
 }
 .container {
-    max-width: 1440px;
+    max-width: 1280px;
     width: 100%;
 
     margin: 0px auto;
+
+    position: relative;
+    top: 20px;
 }
 /* ---------------------------------------------------------------------------- */
 /*                      auth menu */
 /* ---------------------------------------------------------------------------- */
 .auth-frame {
     width: 100%;
-    height: 1000px;
+    height: 700px;
+    font-family: Poppins;
+}
+/* ---------------------------------------------------------------------------- */
+/*                      login */
+/* ---------------------------------------------------------------------------- */
+.register {
+    width: 100%;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    border: 3px solid #ece7e4;
+    border-radius: 2%;
 
-    background-color: #ecc7baa5;
+    background-color: #ece7e4;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.register-label {
+    font-size: 20px;
+}
+.register-input {
+    width: 200px;
+    font-family: Poppins;
 }
