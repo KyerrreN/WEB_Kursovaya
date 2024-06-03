@@ -11,17 +11,13 @@ body {
 .wrapper {
     display: flex;
     min-height: 100%;
-    /* overflow: hidden; */
     flex-direction: column;
 }
 .container {
     max-width: 1280px;
     width: 100%;
 
-    margin: 0px auto;
-
-    position: relative;
-    top: 20px;
+    margin: 0 auto;
 
     display: flex;
     flex-direction: row;
@@ -31,7 +27,7 @@ body {
 /* ---------------------------------------------------------------------------- */
 .auth-frame {
     width: 33.33%;
-    height: 700px;
+    height: 750px;
     font-family: Poppins;
 }
 
@@ -92,7 +88,7 @@ body {
 
     border: 1px solid black;
     border-radius: 5%;
-    background-color: #ece7e4;
+    background-image: linear-gradient(to-right, #f7efeb, #dfd0c9);
 }
 
 @keyframes auth-right-button-hover {
@@ -113,7 +109,7 @@ body {
 /* ---------------------------------------------------------------------------- */
 .register {
     width: 100%;
-    height: 700px;
+    height: 100%;
     display: flex;
     flex-direction: column;
     gap: 5px;
@@ -125,10 +121,91 @@ body {
     align-items: center;
 }
 .register-label {
+    text-align: center;
     font-size: 20px;
 }
 .register-input {
     text-align: center;
     width: 200px;
     font-family: Poppins;
+}
+#register-label-tac {
+    width: 300px;
+}
+
+#rnd-pass {
+    border: 1px solid black;
+    cursor: pointer;
+    background-color: #ece7e4;
+    height: 30px;
+    font-family: Poppins;
+}
+#rnd-nickname {
+    border: 1px solid black;
+    cursor: pointer;
+    background-color: #ece7e4;
+    height: 30px;
+    font-family: Poppins;
+}
+#r-checkbox {
+    width: 30px;
+    height: 30px;
+    box-sizing: initial;
+    border: 0;
+}
+@media (max-width: 999px) {
+    .body {
+        margin: 0;
+    }
+    .container {
+        max-width: 900px;
+        flex-direction: column;
+
+        top: 0;
+    }
+
+    .auth-left {
+        width: 100%;
+        border: 0;
+    }
+
+    .auth-frame {
+        width: 100%;
+    }
+
+    .register {
+        background-color: #f7efeb;
+    }
+    .auth-right {
+        width: 100%;
+        height: 150px;
+        border: 0;
+    }
+
+    .auth-left-content {
+        width: 520px;
+        align-items: center;
+    }
+
+    .auth-right-button {
+        height: 80px;
+
+        margin-bottom: 20px;
+        border-radius: 20%;
+        width: 200px;
+    }
+
+    .auth-left-desc {
+        text-align: center;
+    }
+}
+
+@media (max-width: 500px) {
+    .container {
+        max-width: 425px;
+    }
+    .auth-left-desc {
+        width: 300px;
+        margin-bottom: 30px;
+    }
 }
