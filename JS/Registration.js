@@ -253,21 +253,21 @@ toRegister.addEventListener("click", () => {
     let errorMessage = "";
     let isValid = true;
 
-    if (validatePhoneNumber() === false) {
-        ePhone.style.display = "block";
-        isValid = false;
-        errorMessage += "Phone number must be from Belarus\n";
-    } else {
-        ePhone.style.display = "none";
-    }
-
-    if (validateEmail() === false) {
-        eEmail.style.display = "block";
-        isValid = false;
-        errorMessage += "Email is not valid\n";
-    } else {
-        eEmail.style.display = "none";
-    }
+    // if (validatePhoneNumber() === false) {
+    //     ePhone.style.display = "block";
+    //     isValid = false;
+    //     errorMessage += "Phone number must be from Belarus\n";
+    // } else {
+    //     ePhone.style.display = "none";
+    // }
+    // if (validateEmail() === false) {
+    //     eEmail.style.display = "block";
+    //     isValid = false;
+    //     errorMessage += "Email is not valid\n";
+    // } else {
+    //     eEmail.style.display = "none";
+    // }
+    alert(document.querySelector("#r-birth").value);
 
     if (validateBirth() === false) {
         eBirth.style.display = "block";
@@ -277,62 +277,62 @@ toRegister.addEventListener("click", () => {
         eBirth.style.display = "none";
     }
 
-    if (validatePass() === false) {
-        ePass.style.display = "block";
-        isValid = false;
-        errorMessage += "Your password is weak\n";
-    } else {
-        ePass.style.display = "none";
-    }
+    // if (validatePass() === false) {
+    //     ePass.style.display = "block";
+    //     isValid = false;
+    //     errorMessage += "Your password is weak\n";
+    // } else {
+    //     ePass.style.display = "none";
+    // }
 
-    if (validatePassConfirm() === false) {
-        ePassConfirm.style.display = "block";
-        isValid = false;
-        errorMessage += "Passwords don't match\n";
-    } else {
-        ePassConfirm.style.display = "none";
-    }
+    // if (validatePassConfirm() === false) {
+    //     ePassConfirm.style.display = "block";
+    //     isValid = false;
+    //     errorMessage += "Passwords don't match\n";
+    // } else {
+    //     ePassConfirm.style.display = "none";
+    // }
 
-    if (validateFirstName() === false) {
-        eFirstName.style.display = "block";
-        isValid = false;
-        errorMessage +=
-            "First name has to be cyrillic/latin. Only one word allowed\n";
-    } else {
-        eFirstName.style.display = "none";
-    }
+    // if (validateFirstName() === false) {
+    //     eFirstName.style.display = "block";
+    //     isValid = false;
+    //     errorMessage +=
+    //         "First name has to be cyrillic/latin. Only one word allowed\n";
+    // } else {
+    //     eFirstName.style.display = "none";
+    // }
 
-    if (validateLastName() === false) {
-        eLastName.style.display = "block";
-        isValid = false;
-        errorMessage +=
-            "Last name has to be cyrillic/latin. Only one word allowed\n";
-    } else {
-        eLastName.style.display = "none";
-    }
+    // if (validateLastName() === false) {
+    //     eLastName.style.display = "block";
+    //     isValid = false;
+    //     errorMessage +=
+    //         "Last name has to be cyrillic/latin. Only one word allowed\n";
+    // } else {
+    //     eLastName.style.display = "none";
+    // }
 
-    if (validatePatronymic() === false) {
-        ePatronymic.style.display = "block";
-        errorMessage +=
-            "Patronymic has to be ciryllic/latin. Only one word allowed\n";
-        isValid = false;
-    } else {
-        ePatronymic.style.display = "none";
-    }
+    // if (validatePatronymic() === false) {
+    //     ePatronymic.style.display = "block";
+    //     errorMessage +=
+    //         "Patronymic has to be ciryllic/latin. Only one word allowed\n";
+    //     isValid = false;
+    // } else {
+    //     ePatronymic.style.display = "none";
+    // }
 
-    if (!validateNickname()) {
-        eNickname.style.display = "block";
-        isValid = false;
-        errorMessage +=
-            "Nickname can't be empty, contain special characters, or be less than 5 and greater than 20 symbols\nAlternatively, it might be taken\n";
-    } else {
-        eNickname.style.display = "none";
-    }
+    // if (!validateNickname()) {
+    //     eNickname.style.display = "block";
+    //     isValid = false;
+    //     errorMessage +=
+    //         "Nickname can't be empty, contain special characters, or be less than 5 and greater than 20 symbols\nAlternatively, it might be taken\n";
+    // } else {
+    //     eNickname.style.display = "none";
+    // }
 
-    if (!validateCheckbox()) {
-        isValid = false;
-        errorMessage += "Please read our terms and conditions";
-    }
+    // if (!validateCheckbox()) {
+    //     isValid = false;
+    //     errorMessage += "Please read our terms and conditions";
+    // }
 
     if (isValid === false) {
         alert(errorMessage);
