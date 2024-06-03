@@ -24,100 +24,179 @@
                     <div class="login"></div>
 
                     <div class="register">
-                        <label class="register-label">Phone</label>
-                        <input
-                            type="text"
-                            maxlength="20"
-                            class="register-input"
-                            id="r-phone"
-                        />
+                        <div class="register-input-validate">
+                            <label class="register-label">Phone</label>
+                            <input
+                                type="text"
+                                maxlength="12"
+                                class="register-input"
+                                id="r-phone"
+                            />
+                            <img
+                                src="../Pictures/Utilities/Error.svg"
+                                class="error-icon"
+                                alt=""
+                                id="e-phone"
+                            />
+                        </div>
 
-                        <label class="register-label">Email</label>
-                        <input
-                            type="email"
-                            maxlength="20"
-                            class="register-input"
-                            id="r-email"
-                        />
+                        <div class="register-input-validate">
+                            <label class="register-label">Email</label>
+                            <input
+                                type="email"
+                                maxlength="25"
+                                class="register-input"
+                                id="r-email"
+                            />
+                            <img
+                                src="../Pictures/Utilities/Error.svg"
+                                class="error-icon"
+                                alt=""
+                                id="e-email"
+                            />
+                        </div>
 
-                        <label class="register-label">Date of birth</label>
-                        <input
-                            type="date"
-                            class="register-input"
-                            id="r-birth"
-                        />
+                        <div class="register-input-validate">
+                            <label class="register-label">Date of birth</label>
+                            <input
+                                type="date"
+                                class="register-input"
+                                id="r-birth"
+                            />
+                            <img
+                                src="../Pictures/Utilities/Error.svg"
+                                class="error-icon"
+                                alt=""
+                                id="e-birth"
+                            />
+                        </div>
 
-                        <div
-                            style="
-                                display: flex;
-                                flex-direction: column;
-                                gap: 3px;
-                            "
-                        >
-                            <label class="register-label">Password</label>
+                        <div class="register-input-validate">
+                            <div
+                                style="
+                                    display: flex;
+                                    flex-direction: column;
+                                    gap: 3px;
+                                "
+                            >
+                                <label class="register-label">Password</label>
+                                <input
+                                    type="password"
+                                    maxlength="20"
+                                    class="register-input"
+                                    id="r-pass"
+                                />
+                                <button id="rnd-pass">Generate</button>
+                                <img
+                                    src="../Pictures/Utilities/Error.svg"
+                                    class="error-icon"
+                                    alt=""
+                                    id="e-pass"
+                                />
+                            </div>
+                        </div>
+
+                        <div class="register-input-validate">
+                            <label class="register-label"
+                                >Confirm password</label
+                            >
                             <input
                                 type="password"
                                 maxlength="20"
                                 class="register-input"
-                                id="r-pass"
+                                id="r-pass-confirm"
                             />
-                            <button id="rnd-pass">Generate</button>
+                            <img
+                                src="../Pictures/Utilities/Error.svg"
+                                class="error-icon"
+                                alt=""
+                                id="e-pass-confirm"
+                            />
                         </div>
 
-                        <label class="register-label">Confirm password</label>
-                        <input
-                            type="password"
-                            maxlength="20"
-                            class="register-input"
-                            id="r-pass-confirm"
-                        />
-
-                        <label class="register-label">First name</label>
-                        <input
-                            type="text"
-                            maxlength="20"
-                            class="register-input"
-                            id="r-first-name"
-                        />
-
-                        <label class="register-label">Last name</label>
-                        <input
-                            type="text"
-                            maxlength="20"
-                            class="register-input"
-                            id="r-last-name"
-                        />
-
-                        <label class="register-label"
-                            >Patronymic (optional)</label
-                        >
-                        <input
-                            type="text"
-                            maxlength="20"
-                            class="register-input"
-                            id="r-patronymic"
-                        />
-                        <div
-                            style="
-                                display: flex;
-                                flex-direction: column;
-                                gap: 3px;
-                            "
-                        >
-                            <label class="register-label">Nickname</label>
+                        <div class="register-input-validate">
+                            <label class="register-label">First name</label>
                             <input
                                 type="text"
                                 maxlength="20"
                                 class="register-input"
-                                id="r-nickname"
+                                id="r-first-name"
                             />
-                            <button id="rnd-nickname">Generate</button>
+                            <img
+                                src="../Pictures/Utilities/Error.svg"
+                                class="error-icon"
+                                alt=""
+                                id="e-first-name"
+                            />
                         </div>
 
-                        <label class="register-label" id="register-label-tac"
-                            >I have read the terms and conditions</label
-                        >
-                        <input type="checkbox" id="r-checkbox" />
+                        <div class="register-input-validate">
+                            <label class="register-label">Last name</label>
+                            <input
+                                type="text"
+                                maxlength="20"
+                                class="register-input"
+                                id="r-last-name"
+                            />
+                            <img
+                                src="../Pictures/Utilities/Error.svg"
+                                class="error-icon"
+                                alt=""
+                                id="e-last-name"
+                            />
+                        </div>
+
+                        <div class="register-input-validate">
+                            <label class="register-label"
+                                >Patronymic (optional)</label
+                            >
+                            <input
+                                type="text"
+                                maxlength="20"
+                                class="register-input"
+                                id="r-patronymic"
+                            />
+                            <img
+                                src="../Pictures/Utilities/Error.svg"
+                                class="error-icon"
+                                alt=""
+                                id="e-patronymic"
+                            />
+                        </div>
+
+                        <div class="register-input-validate">
+                            <div
+                                style="
+                                    display: flex;
+                                    flex-direction: column;
+                                    gap: 3px;
+                                "
+                            >
+                                <label class="register-label">Nickname</label>
+                                <input
+                                    type="text"
+                                    maxlength="20"
+                                    class="register-input"
+                                    id="r-nickname"
+                                />
+                                <button id="rnd-nickname">Generate</button>
+                                <img
+                                    src="../Pictures/Utilities/Error.svg"
+                                    class="error-icon"
+                                    alt=""
+                                    id="e-nickname"
+                                />
+                            </div>
+                        </div>
+
+                        <div class="register-input-validate">
+                            <label
+                                class="register-label"
+                                id="register-label-tac"
+                                >I have read the terms and conditions</label
+                            >
+                            <input type="checkbox" id="r-checkbox" />
+                        </div>
                     </div>
                 </div>
 
@@ -127,6 +206,6 @@
             </div>
         </div>
 
-        <script src="../JS/Registration.js"></script>
+        <script defer src="../JS/Registration.js"></script>
     </body>
 </html>

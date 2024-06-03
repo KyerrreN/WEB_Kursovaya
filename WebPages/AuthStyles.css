@@ -153,6 +153,38 @@ body {
     box-sizing: initial;
     border: 0;
 }
+.register-input-validate {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+}
+
+.error-icon {
+    position: absolute;
+    top: 62.5%;
+    right: 10px;
+    transform: translate(-1200%, 0%);
+    color: red;
+    width: 15px;
+    height: 15px;
+    display: none;
+}
+
+#e-birth {
+    transform: translateX(-1180%);
+}
+#e-pass {
+    transform: translate(-1200%, -120%);
+}
+#e-patronymic {
+    transform: translateX(-1250%);
+}
+#e-nickname {
+    transform: translate(-1200%, -120%);
+}
 @media (max-width: 999px) {
     .body {
         margin: 0;
