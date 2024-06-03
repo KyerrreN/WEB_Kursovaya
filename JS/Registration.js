@@ -53,23 +53,36 @@ function validateEmail() {
 }
 
 function validateBirth() {
-    const birth = new Date(document.querySelector("#r-birth").value);
-    const today = new Date();
-    const age = today.getFullYear() - birth.getFullYear();
-    const monthDiff = today.getMonth() - birth.getMonth();
+    let birth = document.querySelector("#r-birth").value;
+    let dateBirth = birth.trim(" ").split("-");
 
+    const currentDate = new Date();
+    const currentYear = currentDate.getFullYear();
+
+    const isValid = /^[-0-9]*$/.test(birth);
     if (
-        monthDiff < 0 ||
-        (monthDiff === 0 && today.getDate() < birth.getDate())
+        !isValid ||
+        dateBirth.length != 3 ||
+        dateBirth[0] == "" ||
+        dateBirth[1] == "" ||
+        dateBirth[2] == ""
     ) {
-        age--;
-    }
-
-    if (age >= 16) {
-        return true;
-    } else {
         return false;
     }
+
+    if (dateBirth[0] > currentYear || dateBirth[0] > currentYear - 16) {
+        return false;
+    }
+
+    if (dateBirth[1] > 12 || dateBirth[1] < 1) {
+        return false;
+    }
+
+    if (dateBirth[2] > 31 || dateBirth[2] < 1) {
+        return false;
+    }
+
+    return true;
 }
 
 function validatePass() {
@@ -253,86 +266,86 @@ toRegister.addEventListener("click", () => {
     let errorMessage = "";
     let isValid = true;
 
-    // if (validatePhoneNumber() === false) {
-    //     ePhone.style.display = "block";
-    //     isValid = false;
-    //     errorMessage += "Phone number must be from Belarus\n";
-    // } else {
-    //     ePhone.style.display = "none";
-    // }
-    // if (validateEmail() === false) {
-    //     eEmail.style.display = "block";
-    //     isValid = false;
-    //     errorMessage += "Email is not valid\n";
-    // } else {
-    //     eEmail.style.display = "none";
-    // }
-    alert(document.querySelector("#r-birth").value);
+    if (validatePhoneNumber() === false) {
+        ePhone.style.display = "block";
+        isValid = false;
+        errorMessage += "Phone number must be from Belarus\n";
+    } else {
+        ePhone.style.display = "none";
+    }
+    if (validateEmail() === false) {
+        eEmail.style.display = "block";
+        isValid = false;
+        errorMessage += "Email is not valid\n";
+    } else {
+        eEmail.style.display = "none";
+    }
 
     if (validateBirth() === false) {
         eBirth.style.display = "block";
         isValid = false;
-        errorMessage += "You must be over 16 to use this website\n";
+        errorMessage +=
+            "You must be over 16 to use this website\nDate input format: YYYY-MM-DD";
     } else {
         eBirth.style.display = "none";
     }
 
-    // if (validatePass() === false) {
-    //     ePass.style.display = "block";
-    //     isValid = false;
-    //     errorMessage += "Your password is weak\n";
-    // } else {
-    //     ePass.style.display = "none";
-    // }
+    if (validatePass() === false) {
+        ePass.style.display = "block";
+        isValid = false;
+        errorMessage += "Your password is weak\n";
+    } else {
+        ePass.style.display = "none";
+    }
 
-    // if (validatePassConfirm() === false) {
-    //     ePassConfirm.style.display = "block";
-    //     isValid = false;
-    //     errorMessage += "Passwords don't match\n";
-    // } else {
-    //     ePassConfirm.style.display = "none";
-    // }
+    if (validatePassConfirm() === false) {
+        ePassConfirm.style.display = "block";
+        isValid = false;
+        errorMessage += "Passwords don't match\n";
+    } else {
+        ePassConfirm.style.display = "none";
+    }
 
-    // if (validateFirstName() === false) {
-    //     eFirstName.style.display = "block";
-    //     isValid = false;
-    //     errorMessage +=
-    //         "First name has to be cyrillic/latin. Only one word allowed\n";
-    // } else {
-    //     eFirstName.style.display = "none";
-    // }
+    if (validateFirstName() === false) {
+        eFirstName.style.display = "block";
+        isValid = false;
+        errorMessage +=
+            "First name has to be cyrillic/latin. Only one word allowed\n";
+    } else {
+        eFirstName.style.display = "none";
+    }
 
-    // if (validateLastName() === false) {
-    //     eLastName.style.display = "block";
-    //     isValid = false;
-    //     errorMessage +=
-    //         "Last name has to be cyrillic/latin. Only one word allowed\n";
-    // } else {
-    //     eLastName.style.display = "none";
-    // }
+    if (validateLastName() === false) {
+        eLastName.style.display = "block";
+        isValid = false;
+        errorMessage +=
+            "Last name has to be cyrillic/latin. Only one word allowed\n";
+    } else {
+        eLastName.style.display = "none";
+    }
 
-    // if (validatePatronymic() === false) {
-    //     ePatronymic.style.display = "block";
-    //     errorMessage +=
-    //         "Patronymic has to be ciryllic/latin. Only one word allowed\n";
-    //     isValid = false;
-    // } else {
-    //     ePatronymic.style.display = "none";
-    // }
+    if (validatePatronymic() === false) {
+        ePatronymic.style.display = "block";
+        errorMessage +=
+            "Patronymic has to be ciryllic/latin. Only one word allowed\n";
+        isValid = false;
+    } else {
+        ePatronymic.style.display = "none";
+    }
 
-    // if (!validateNickname()) {
-    //     eNickname.style.display = "block";
-    //     isValid = false;
-    //     errorMessage +=
-    //         "Nickname can't be empty, contain special characters, or be less than 5 and greater than 20 symbols\nAlternatively, it might be taken\n";
-    // } else {
-    //     eNickname.style.display = "none";
-    // }
+    if (!validateNickname()) {
+        eNickname.style.display = "block";
+        isValid = false;
+        errorMessage +=
+            "Nickname can't be empty, contain special characters, or be less than 5 and greater than 20 symbols\nAlternatively, it might be taken\n";
+    } else {
+        eNickname.style.display = "none";
+    }
 
-    // if (!validateCheckbox()) {
-    //     isValid = false;
-    //     errorMessage += "Please read our terms and conditions";
-    // }
+    if (!validateCheckbox()) {
+        isValid = false;
+        errorMessage += "Please read our terms and conditions";
+    }
 
     if (isValid === false) {
         alert(errorMessage);
