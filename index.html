@@ -12,11 +12,11 @@
             <!-- ham menu -->
             <div class="off-screen-menu">
                 <a href="WebPages/Authorization.html">Login</a>
-                <a href="">Projects</a>
-                <a href="">About</a>
+                <a href="#projects-frame">Projects</a>
+                <a href="#firm-frame">About</a>
                 <a href="">News</a>
-                <a href="">Team</a>
-                <a href="">Contact</a>
+                <a href="#team-frame">Team</a>
+                <a href="#above-footer-frame">Contact</a>
                 <a href="" class="header-content-nav-rectangle">Get Template</a>
             </div>
             <nav class="container">
@@ -27,7 +27,6 @@
                 </div>
             </nav>
 
-            <div class="offscreen-menu"></div>
             <!-- header -->
             <header class="container">
                 <div class="header-frame">
@@ -43,14 +42,26 @@
                                 class="header-content-nav-login"
                                 >Login</a
                             >
-                            <span class="header-content-nav-projects"
-                                >Projects</span
+                            <a
+                                href="#projects-frame"
+                                class="header-content-nav-projects"
+                                >Projects</a
                             >
-                            <span class="header-content-nav-about">About</span>
-                            <span class="header-content-nav-news">News</span>
-                            <span class="header-content-nav-team">Team</span>
-                            <span class="header-content-nav-contact"
-                                >Contact</span
+                            <a
+                                href="#firm-frame"
+                                class="header-content-nav-about"
+                                >About</a
+                            >
+                            <a href="" class="header-content-nav-news">News</a>
+                            <a
+                                href="#team-frame"
+                                class="header-content-nav-team"
+                                >Team</a
+                            >
+                            <a
+                                href="#above-footer-frame"
+                                class="header-content-nav-contact"
+                                >Contact</a
                             >
                             <div class="header-content-nav-rectangle">
                                 <span class="header-content-nav-rectangle-text"
@@ -93,7 +104,7 @@
 
             <!-- firm-info -->
             <article class="container">
-                <div class="firm-frame">
+                <div id="firm-frame">
                     <div class="firm-content">
                         <span class="firm-our">Our firm</span>
 
@@ -310,7 +321,7 @@
 
             <!-- projects -->
             <article class="container">
-                <div class="projects-frame">
+                <div id="projects-frame">
                     <div class="projects-content">
                         <div class="projects-text">
                             <span class="projects-text-header"
@@ -364,7 +375,7 @@
 
             <!-- team -->
             <section class="container">
-                <div class="team-frame">
+                <div id="team-frame">
                     <div class="team-content">
                         <div class="team-content-text">
                             <span class="team-content-text-header"
@@ -487,7 +498,7 @@
 
             <!-- above-footer -->
             <section class="container">
-                <div class="above-footer-frame">
+                <div id="above-footer-frame">
                     <div class="above-footer-content">
                         <div class="above-footer-content-text">
                             <span class="above-footer-content-text-header"
@@ -536,7 +547,8 @@
                 </div>
             </footer>
 
-            <script src="JS/HamburgerMenu.js"></script>
+            <script defer src="JS/HamburgerMenu.js"></script>
+            <script defer src="JS/SmoothAnchorLinks.js"></script>
         </div>
     </body>
 </html>
