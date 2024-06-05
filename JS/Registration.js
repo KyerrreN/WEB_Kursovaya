@@ -54,35 +54,44 @@ function validateEmail() {
 
 function validateBirth() {
     let birth = document.querySelector("#r-birth").value;
-    let dateBirth = birth.trim(" ").split("-");
+    // let dateBirth = birth.trim(" ").split("-");
 
-    const currentDate = new Date();
-    const currentYear = currentDate.getFullYear();
+    // const currentDate = new Date();
+    // const currentYear = currentDate.getFullYear();
+    let today = new Date();
+    today.setFullYear(today.getFullYear() - 16);
+    const birthdayDate = new Date(birth);
 
-    const isValid = /^[-0-9]*$/.test(birth);
-    if (
-        !isValid ||
-        dateBirth.length != 3 ||
-        dateBirth[0] == "" ||
-        dateBirth[1] == "" ||
-        dateBirth[2] == ""
-    ) {
-        return false;
-    }
-
-    if (dateBirth[0] > currentYear || dateBirth[0] > currentYear - 16) {
-        return false;
-    }
-
-    if (dateBirth[1] > 12 || dateBirth[1] < 1) {
-        return false;
-    }
-
-    if (dateBirth[2] > 31 || dateBirth[2] < 1) {
+    if (birthdayDate > today) {
         return false;
     }
 
     return true;
+
+    // const isBirthValid = /^[-0-9]*$/.test(birth);
+    // if (
+    //     !isBirthValid ||
+    //     dateBirth.length != 3 ||
+    //     dateBirth[0] == "" ||
+    //     dateBirth[1] == "" ||
+    //     dateBirth[2] == ""
+    // ) {
+    //     return false;
+    // }
+
+    // if (dateBirth[0] > currentYear - 16) {
+    //     return false;
+    // }
+
+    // if (dateBirth[1] > 12 || dateBirth[1] < 1) {
+    //     return false;
+    // }
+
+    // if (dateBirth[2] > 31 || dateBirth[2] < 1) {
+    //     return false;
+    // }
+
+    // return true;
 }
 
 function validatePass() {
@@ -284,8 +293,7 @@ toRegister.addEventListener("click", () => {
     if (validateBirth() === false) {
         eBirth.style.display = "block";
         isValid = false;
-        errorMessage +=
-            "You must be over 16 to use this website\nDate input format: YYYY-MM-DD";
+        errorMessage += "You must be over 16 to use this website\n";
     } else {
         eBirth.style.display = "none";
     }
@@ -349,5 +357,51 @@ toRegister.addEventListener("click", () => {
 
     if (isValid === false) {
         alert(errorMessage);
+    } else {
+        const userPhoneNumber = document.querySelector("#r-phone").value;
+        const userEmail = document.querySelector("#r-email").value;
+        const userBirth = document.querySelector("#r-birth").value;
+        const userPassword = document.querySelector("#r-pass").value;
+        const userFirstName = document.querySelector("#r-first-name").value;
+        const userLastName = document.querySelector("#r-last-name").value;
+        const userPatronymic = document.querySelector("#r-patronymic").value;
+        const userNickname = document.querySelector("#r-nickname").value;
+
+        const newUser = new User(
+            userPhoneNumber,
+            userEmail,
+            userBirth,
+            userPassword,
+            userFirstName,
+            userLastName,
+            userPatronymic,
+            userNickname
+        );
+        const userData = JSON.stringify(newUser);
+
+        localStorage.setItem(localStorage.length, userData);
+
+        alert("You have successfully registered.");
+        window.location.replace("../index.html");
     }
 });
+
+function User(
+    phone,
+    email,
+    birth,
+    password,
+    firstName,
+    lastName,
+    patronymic,
+    nickname
+) {
+    this.phone = phone;
+    this.email = email;
+    this.birth = birth;
+    this.password = password;
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.patronymic = patronymic;
+    this.nickname = nickname;
+}
