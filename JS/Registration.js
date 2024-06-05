@@ -54,44 +54,15 @@ function validateEmail() {
 
 function validateBirth() {
     let birth = document.querySelector("#r-birth").value;
-    // let dateBirth = birth.trim(" ").split("-");
-
-    // const currentDate = new Date();
-    // const currentYear = currentDate.getFullYear();
     let today = new Date();
     today.setFullYear(today.getFullYear() - 16);
     const birthdayDate = new Date(birth);
 
-    if (birthdayDate > today) {
+    if (birthdayDate > today || birth === "") {
         return false;
     }
 
     return true;
-
-    // const isBirthValid = /^[-0-9]*$/.test(birth);
-    // if (
-    //     !isBirthValid ||
-    //     dateBirth.length != 3 ||
-    //     dateBirth[0] == "" ||
-    //     dateBirth[1] == "" ||
-    //     dateBirth[2] == ""
-    // ) {
-    //     return false;
-    // }
-
-    // if (dateBirth[0] > currentYear - 16) {
-    //     return false;
-    // }
-
-    // if (dateBirth[1] > 12 || dateBirth[1] < 1) {
-    //     return false;
-    // }
-
-    // if (dateBirth[2] > 31 || dateBirth[2] < 1) {
-    //     return false;
-    // }
-
-    // return true;
 }
 
 function validatePass() {
@@ -278,14 +249,14 @@ toRegister.addEventListener("click", () => {
     if (validatePhoneNumber() === false) {
         ePhone.style.display = "block";
         isValid = false;
-        errorMessage += "Phone number must be from Belarus\n";
+        errorMessage += "Phone number must be from Belarus\n\n";
     } else {
         ePhone.style.display = "none";
     }
     if (validateEmail() === false) {
         eEmail.style.display = "block";
         isValid = false;
-        errorMessage += "Email is not valid\n";
+        errorMessage += "Email is not valid\n\n";
     } else {
         eEmail.style.display = "none";
     }
@@ -293,7 +264,7 @@ toRegister.addEventListener("click", () => {
     if (validateBirth() === false) {
         eBirth.style.display = "block";
         isValid = false;
-        errorMessage += "You must be over 16 to use this website\n";
+        errorMessage += "You must be over 16 to use this website\n\n";
     } else {
         eBirth.style.display = "none";
     }
@@ -301,7 +272,7 @@ toRegister.addEventListener("click", () => {
     if (validatePass() === false) {
         ePass.style.display = "block";
         isValid = false;
-        errorMessage += "Your password is weak\n";
+        errorMessage += "Your password is weak\n\n";
     } else {
         ePass.style.display = "none";
     }
@@ -309,7 +280,7 @@ toRegister.addEventListener("click", () => {
     if (validatePassConfirm() === false) {
         ePassConfirm.style.display = "block";
         isValid = false;
-        errorMessage += "Passwords don't match\n";
+        errorMessage += "Passwords don't match\n\n";
     } else {
         ePassConfirm.style.display = "none";
     }
@@ -318,7 +289,7 @@ toRegister.addEventListener("click", () => {
         eFirstName.style.display = "block";
         isValid = false;
         errorMessage +=
-            "First name has to be cyrillic/latin. Only one word allowed\n";
+            "First name has to be cyrillic/latin. Only one word allowed\n\n";
     } else {
         eFirstName.style.display = "none";
     }
@@ -327,7 +298,7 @@ toRegister.addEventListener("click", () => {
         eLastName.style.display = "block";
         isValid = false;
         errorMessage +=
-            "Last name has to be cyrillic/latin. Only one word allowed\n";
+            "Last name has to be cyrillic/latin. Only one word allowed\n\n";
     } else {
         eLastName.style.display = "none";
     }
@@ -335,7 +306,7 @@ toRegister.addEventListener("click", () => {
     if (validatePatronymic() === false) {
         ePatronymic.style.display = "block";
         errorMessage +=
-            "Patronymic has to be ciryllic/latin. Only one word allowed\n";
+            "Patronymic has to be ciryllic/latin. Only one word allowed\n\n";
         isValid = false;
     } else {
         ePatronymic.style.display = "none";
@@ -345,7 +316,7 @@ toRegister.addEventListener("click", () => {
         eNickname.style.display = "block";
         isValid = false;
         errorMessage +=
-            "Nickname can't be empty, contain special characters, or be less than 5 and greater than 20 symbols\nAlternatively, it might be taken\n";
+            "Nickname can't be empty, contain special characters, or be less than 5 and greater than 20 symbols\nAlternatively, it might be taken\n\n";
     } else {
         eNickname.style.display = "none";
     }
