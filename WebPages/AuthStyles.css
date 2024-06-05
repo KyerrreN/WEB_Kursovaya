@@ -5,13 +5,17 @@
 /* ---------------------------------------------------------------------------- */
 /*                      Нужные стили для адаптива */
 /* ---------------------------------------------------------------------------- */
+html,
 body {
-    margin: 0px;
+    margin: 0;
+    padding: 0;
+    height: 100%;
 }
 .wrapper {
     display: flex;
     min-height: 100%;
     flex-direction: column;
+    justify-content: center;
 }
 .container {
     max-width: 1280px;
@@ -27,7 +31,7 @@ body {
 /* ---------------------------------------------------------------------------- */
 .auth-frame {
     width: 33.33%;
-    height: 750px;
+    height: 100%;
     font-family: Poppins;
 }
 
@@ -88,7 +92,7 @@ body {
 
     border: 1px solid black;
     border-radius: 5%;
-    background-image: linear-gradient(to-right, #f7efeb, #dfd0c9);
+    background-image: linear-gradient(to right, #f7efeb, #dfd0c9);
 }
 
 @keyframes auth-right-button-hover {
@@ -112,7 +116,9 @@ body {
     height: 100%;
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 32px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 
     background-color: #ece7e4;
 
@@ -229,6 +235,9 @@ body {
 
     .auth-left-desc {
         text-align: center;
+    }
+    .auth-right-button:hover {
+        animation: none;
     }
 }
 
