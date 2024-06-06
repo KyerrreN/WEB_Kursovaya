@@ -233,6 +233,27 @@ function validateNickname() {
 
     return true;
 }
+function checkNicknameIfTaken() {
+    let nickname = document.querySelector("#r-nickname").value;
+    const allUsers = {};
+
+    for (let i = 0; i < localStorage.length; i++) {
+        const key = localStorage.key(i);
+
+        if (!isNaN(parseInt(key))) {
+            const userData = JSON.parse(localStorage.getItem(key));
+            allUsers[key] = userData;
+        }
+    }
+
+    for (const userId in allUsers) {
+        if (allUsers[userId].nickname === nickname) {
+            return false;
+        }
+    }
+
+    return true;
+}
 function validateCheckbox() {
     let checkbox = document.getElementById("r-checkbox");
 
@@ -316,9 +337,15 @@ toRegister.addEventListener("click", () => {
         eNickname.style.display = "block";
         isValid = false;
         errorMessage +=
-            "Nickname can't be empty, contain special characters, or be less than 5 and greater than 20 symbols\nAlternatively, it might be taken\n\n";
+            "Nickname can't be empty, contain special characters, or be less than 5 and greater than 20 symbols\n\n";
     } else {
-        eNickname.style.display = "none";
+        if (!checkNicknameIfTaken()) {
+            eNickname.style.display = "block";
+            isValid = false;
+            errorMessage += "Nickname is already taken\n";
+        } else {
+            eNickname.style.display = "none";
+        }
     }
 
     if (!validateCheckbox()) {
