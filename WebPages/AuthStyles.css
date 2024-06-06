@@ -245,6 +245,12 @@ body {
     width: 80%;
     text-align: center;
 }
+#button-to-register {
+    display: none;
+}
+#button-to-login {
+    display: block;
+}
 @media (max-width: 999px) {
     .body {
         margin: 0;
