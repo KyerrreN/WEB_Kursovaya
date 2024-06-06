@@ -21,7 +21,8 @@ buttonToLogin.addEventListener("click", () => {
             allUsers[userId].nickname === nickInput &&
             allUsers[userId].password === passInput
         ) {
-            localStorage.setItem("Logged", nickInput);
+            const valueFromLS = localStorage.getItem(userId);
+            localStorage.setItem("Logged", valueFromLS);
 
             alert("You have succesfully logged in. Welcome, " + nickInput);
             window.location.replace("../index.html");
