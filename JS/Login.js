@@ -3,7 +3,6 @@ const buttonToLogin = document.querySelector("#button-to-login");
 buttonToLogin.addEventListener("click", () => {
     const nickInput = document.querySelector("#l-nickname").value;
     const passInput = document.querySelector("#l-pass").value;
-    const hasLoggedIn = false;
 
     let nickname = document.querySelector("#r-nickname").value;
     const allUsers = {};
