@@ -80,5 +80,8 @@ modalClose.addEventListener("click", () => {
     const myModal = document.querySelector(".profile");
     myModal.style.opacity = 0;
     myModal.style.visibility = "hidden";
-    document.body.style.overflow = "auto";
+
+    if (document.querySelector(".ham-menu.active") === null) {
+        document.body.style.overflow = "auto";
+    }
 });
