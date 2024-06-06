@@ -47,6 +47,10 @@ document.addEventListener("DOMContentLoaded", () => {
         let headerContact = document.querySelector(
             ".header-content-nav-contact"
         );
+        let hamProfilePic = document.querySelector("#off-screen-menu-profile");
+        let headerProfilePic = document.querySelector(
+            "#header-content-nav-profile"
+        );
 
         hamProjects.style.display = "none";
         hamTeam.style.display = "none";
@@ -54,5 +58,7 @@ document.addEventListener("DOMContentLoaded", () => {
         headerProjects.style.display = "none";
         headerTeam.style.display = "none";
         headerContact.style.display = "none";
+        hamProfilePic.style.display = "none";
+        headerProfilePic.style.display = "none";
     }
 });
