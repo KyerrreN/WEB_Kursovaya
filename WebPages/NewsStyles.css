@@ -210,20 +210,8 @@ nav.container {
     font-weight: 400;
     line-height: 24px;
 }
-.header-content-nav-projects {
-    width: 61px;
-}
-.header-content-nav-about {
-    width: 46px;
-}
 .header-content-nav-news {
     width: 40px;
-}
-.header-content-nav-team {
-    width: 44px;
-}
-.header-content-nav-contant {
-    width: 64px;
 }
 .header-content-nav-login {
     text-decoration: none;
@@ -260,6 +248,86 @@ nav.container {
     height: 30px;
 }
 /* ---------------------------------------------------------------------------- */
+/*                                 news */
+/* ---------------------------------------------------------------------------- */
+.news-frame {
+    max-width: 100%;
+    height: 1000px;
+    background-color: #ece7e4;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.news-text {
+    display: flex;
+    width: 80%;
+}
+.news-text-header {
+    width: 100%;
+    font-family: Poppins;
+
+    font-size: 32px;
+    text-align: center;
+}
+/* ---------------------------------------------------------------------------- */
+/*                                 footer */
+/* ---------------------------------------------------------------------------- */
+.footer-frame {
+    width: 100%;
+    height: 204px;
+    flex-shrink: 0;
+    background-color: #f7f7f7;
+}
+.footer-content {
+    display: inline-flex;
+    padding-right: 0.016px;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 261.594px;
+
+    position: relative;
+    top: 59px;
+    left: 135px;
+}
+.footer-content-text {
+    display: flex;
+    width: 694.391px;
+    height: 84px;
+    padding-top: 2px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+}
+.footer-content-text-desc {
+    width: 694.391px;
+    height: 40px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+}
+.footer-content-text-desc-powered {
+    color: #645c55;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+}
+.footer-content-socials {
+    display: flex;
+    width: 112px;
+    height: 24.609px;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+}
+.footer-content-socials-custom-pictures {
+    width: 24px;
+    height: 24px;
+}
+/* ---------------------------------------------------------------------------- */
 /*                                  Медиа запросы */
 /* ---------------------------------------------------------------------------- */
 @media (max-width: 1320px) {
@@ -273,8 +341,19 @@ nav.container {
         gap: 10px;
     }
     /* ---------------------------------------------------------------------------- */
-    /*                                  first-example */
+    /*                                 footer */
     /* ---------------------------------------------------------------------------- */
+    .footer-frame {
+        display: flex;
+        justify-content: center;
+    }
+    .footer-content {
+        left: 0;
+        top: 0;
+
+        height: 140px;
+        gap: 10px;
+    }
 }
 @media (max-width: 992px) {
     .container {
@@ -289,6 +368,25 @@ nav.container {
     .header-content {
         flex-direction: column;
         gap: 0px;
+    }
+    /* ---------------------------------------------------------------------------- */
+    /*                                 footer */
+    /* ---------------------------------------------------------------------------- */
+    .footer-content {
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+        top: 30px;
+    }
+    .footer-content-text {
+        width: 400px;
+        align-items: center;
+    }
+    .footer-content-text-desc {
+        width: 300px;
+    }
+    .footer-content-socials {
+        width: 300px;
     }
 }
 @media (max-width: 767px) {
@@ -329,6 +427,21 @@ nav.container {
         flex-direction: column;
         padding: 0;
         gap: 10px;
+    }
+    /* ---------------------------------------------------------------------------- */
+    /*                                 footer */
+    /* ---------------------------------------------------------------------------- */
+    .footer-content {
+        top: 30px;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+    .footer-content-text {
+        align-items: center;
+    }
+    .footer-content-text-desc {
+        width: 250px;
     }
 }
 @media (max-width: 320px) {
