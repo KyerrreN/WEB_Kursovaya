@@ -1123,7 +1123,7 @@ body {
     padding-right: 0.016px;
     justify-content: center;
     align-items: flex-end;
-    gap: 361.594px;
+    gap: 261.594px;
 
     position: relative;
     top: 59px;
@@ -1161,6 +1161,10 @@ body {
     justify-content: center;
     align-items: flex-start;
     gap: 20px;
+}
+.footer-content-socials-custom-pictures {
+    width: 24px;
+    height: 24px;
 }
 /* ---------------------------------------------------------------------------- */
 /*                                  Медиа запросы */
@@ -1266,7 +1270,7 @@ body {
         top: 0;
 
         height: 140px;
-        gap: 100px;
+        gap: 10px;
     }
 }
 @media (max-width: 992px) {
@@ -1431,10 +1435,20 @@ body {
     /*                                 footer */
     /* ---------------------------------------------------------------------------- */
     .footer-content {
+        flex-direction: column;
         gap: 30px;
+        align-items: center;
+        top: 30px;
     }
     .footer-content-text {
-        width: 500px;
+        width: 400px;
+        align-items: center;
+    }
+    .footer-content-text-desc {
+        width: 300px;
+    }
+    .footer-content-socials {
+        width: 300px;
     }
 }
 @media (max-width: 767px) {
