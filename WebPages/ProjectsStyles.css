@@ -1,0 +1,373 @@
+@font-face {
+    font-family: "Poppins";
+    src: url(../Fonts/Poppins.ttf);
+}
+/* ---------------------------------------------------------------------------- */
+/*                      Нужные стили для адаптива */
+/* ---------------------------------------------------------------------------- */
+body {
+    margin: 0px;
+}
+.wrapper {
+    display: flex;
+    min-height: 100%;
+    overflow: hidden;
+    flex-direction: column;
+}
+.container {
+    max-width: 1440px;
+    width: 100%;
+
+    margin: 0px auto;
+}
+* {
+    font-family: Poppins;
+}
+/* ---------------------------------------------------------------------------- */
+/*                      Модальное окно */
+/* ---------------------------------------------------------------------------- */
+.profile {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+
+    background-color: rgb(0, 0, 0, 0.8);
+
+    top: 0;
+    left: 0;
+
+    opacity: 0;
+    visibility: hidden;
+    z-index: 11;
+
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+    transition: all 0.2s ease-in 0s;
+}
+.profile-frame {
+    min-height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+}
+.profile-content {
+    background-color: white;
+    max-width: 800px;
+    color: black;
+
+    padding: 30px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    position: relative;
+}
+#profile-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    text-decoration: none;
+    color: black;
+}
+.profile-content > span {
+    display: block;
+    width: 95%;
+    height: 2px;
+    background-color: black;
+    border-radius: 25px;
+}
+.profile-content > p {
+    margin: 0;
+
+    font-size: 32px;
+}
+.profile-content > h1 {
+    text-align: center;
+}
+
+.profile.open {
+    opacity: 1;
+    visibility: 1;
+}
+/* ---------------------------------------------------------------------------- */
+/*                      Бургер меню */
+/* ---------------------------------------------------------------------------- */
+.off-screen-menu {
+    background-color: white;
+    height: 100vh;
+    width: 100%;
+    max-width: 300px;
+    position: fixed;
+    top: 0;
+    right: -400px;
+    z-index: 10;
+
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    font-size: 20px;
+    font-family: Poppins;
+    transition: 0.3s ease;
+}
+
+.off-screen-menu a {
+    text-decoration: none;
+    color: black;
+}
+.off-screen-menu a.header-content-nav-rectangle {
+    color: white;
+}
+.off-screen-menu.active {
+    right: 0;
+}
+
+nav.container {
+    display: none;
+    z-index: 10;
+    background-color: white;
+}
+
+.ham-menu {
+    height: 50px;
+    width: 50px;
+    margin-left: auto;
+    position: relative;
+}
+
+.ham-menu span {
+    height: 5px;
+    width: 100%;
+    background-color: black;
+    border-radius: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-100%, -50%);
+    transition: 0.3s ease;
+
+    z-index: 12;
+}
+
+.ham-menu span:nth-child(1) {
+    top: 25%;
+}
+
+.ham-menu span:nth-child(3) {
+    top: 75%;
+}
+
+.ham-menu.active span:nth-child(1) {
+    top: 50%;
+    transform: translate(-100%, -50%) rotate(45deg);
+}
+.ham-menu.active span:nth-child(2) {
+    opacity: 0;
+}
+.ham-menu.active span:nth-child(3) {
+    top: 50%;
+    transform: translate(-100%, -50%) rotate(-45deg);
+}
+#off-screen-menu-profile {
+    width: 40px;
+    height: 40px;
+}
+/* ---------------------------------------------------------------------------- */
+/*                                  header */
+/* ---------------------------------------------------------------------------- */
+.header-frame {
+    max-width: 1440px;
+    height: 90px;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+
+    background: #fff;
+    box-shadow: 11px 11px 25px 0px rgba(9, 7, 37, 0.06);
+}
+.header-content {
+    display: inline-flex;
+    padding: 20px 20px 20px 32px;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 343.188px;
+}
+.header-content-nav {
+    display: flex;
+    height: 50px;
+    padding: 2px 0px 2px 15.813px;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 32px;
+
+    color: #1b1a1a;
+    font-family: Poppins;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+.header-content-nav-news {
+    width: 40px;
+}
+.header-content-nav-login {
+    text-decoration: none;
+    color: black;
+}
+.header-content-nav-rectangle {
+    width: 155px;
+    height: 46px;
+    flex-shrink: 0;
+    border-radius: 14px;
+    background: #1b1a1a;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header-content-nav-rectangle-text {
+    width: 115px;
+
+    color: #fff;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.4px;
+}
+.header-content-nav a {
+    text-decoration: none;
+    color: black;
+}
+#header-content-nav-profile {
+    width: 30px;
+    height: 30px;
+}
+/* ---------------------------------------------------------------------------- */
+/*                                  Медиа запросы */
+/* ---------------------------------------------------------------------------- */
+@media (max-width: 1320px) {
+    .container {
+        max-width: 1100px;
+    }
+    /* ---------------------------------------------------------------------------- */
+    /*                                  header */
+    /* ---------------------------------------------------------------------------- */
+    .header-content {
+        gap: 10px;
+    }
+    /* ---------------------------------------------------------------------------- */
+    /*                                 footer */
+    /* ---------------------------------------------------------------------------- */
+    .footer-frame {
+        display: flex;
+        justify-content: center;
+    }
+    .footer-content {
+        left: 0;
+        top: 0;
+
+        height: 140px;
+        gap: 10px;
+    }
+}
+@media (max-width: 992px) {
+    .container {
+        max-width: 750px;
+    }
+    /* ---------------------------------------------------------------------------- */
+    /*                                  header */
+    /* ---------------------------------------------------------------------------- */
+    .header-frame {
+        padding-top: 10px;
+    }
+    .header-content {
+        flex-direction: column;
+        gap: 0px;
+    }
+    /* ---------------------------------------------------------------------------- */
+    /*                                 footer */
+    /* ---------------------------------------------------------------------------- */
+    .footer-content {
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+        top: 30px;
+    }
+    .footer-content-text {
+        width: 400px;
+        align-items: center;
+    }
+    .footer-content-text-desc {
+        width: 300px;
+    }
+    .footer-content-socials {
+        width: 300px;
+    }
+}
+@media (max-width: 767px) {
+    .container {
+        max-width: 420px;
+    }
+    /* ---------------------------------------------------------------------------- */
+    /*                                  hamburger menu */
+    /* ---------------------------------------------------------------------------- */
+    .off-screen-menu {
+        display: flex;
+    }
+
+    nav.container {
+        display: flex;
+    }
+    /* ---------------------------------------------------------------------------- */
+    /*                                  header */
+    /* ---------------------------------------------------------------------------- */
+    header {
+        display: none;
+    }
+    .header-frame {
+        height: 270px;
+        box-shadow: none;
+        margin: 0;
+        padding: 0;
+        padding-top: 10px;
+    }
+    .header-content {
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 0px;
+        padding: 0;
+        padding-bottom: 10px;
+    }
+    .header-content-nav {
+        flex-direction: column;
+        padding: 0;
+        gap: 10px;
+    }
+    /* ---------------------------------------------------------------------------- */
+    /*                                 footer */
+    /* ---------------------------------------------------------------------------- */
+    .footer-content {
+        top: 30px;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+    .footer-content-text {
+        align-items: center;
+    }
+    .footer-content-text-desc {
+        width: 250px;
+    }
+}
+@media (max-width: 320px) {
+    .container {
+        max-width: none;
+    }
+}

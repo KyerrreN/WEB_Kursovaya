@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="ProjectsStyles.css" type="text/css" />
+        <title>Projects</title>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="profile" id="profile">
+                <div class="profile-frame">
+                    <div class="profile-content">
+                        <a href="#" id="profile-close">X</a>
+
+                        <img src="../Pictures/Header/IMAGE.svg" alt="" />
+                        <h1>
+                            Here is your profile information. In case you forgot
+                            any of your credentials, you can always look them up
+                            here.
+                        </h1>
+
+                        <span></span>
+                        <p>Nickname</p>
+                        <div id="profile-content-nickname">1</div>
+
+                        <span></span>
+                        <p>First Name</p>
+                        <div id="profile-content-first-name"></div>
+
+                        <span></span>
+                        <p>Last Name</p>
+                        <div id="profile-content-last-name"></div>
+
+                        <span></span>
+                        <p>Patronymic</p>
+                        <div id="profile-content-patronymic"></div>
+
+                        <span></span>
+                        <p>Phone</p>
+                        <div id="profile-content-phone"></div>
+
+                        <span></span>
+                        <p>Date Of Birth</p>
+                        <div id="profile-content-birth"></div>
+
+                        <span></span>
+                        <p>Password</p>
+                        <div id="profile-content-password"></div>
+
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ham menu -->
+            <div class="off-screen-menu">
+                <img
+                    src="../Pictures/Utilities/Profile Pic.svg"
+                    alt=""
+                    id="off-screen-menu-profile"
+                />
+                <a href="" id="off-screen-menu-logout">Log out</a>
+                <a href="Authorization.html" id="off-screen-menu-login"
+                    >Login</a
+                >
+                <a href="../index.html">Main Page</a>
+                <a href="News.html">News</a>
+                <a href="" class="header-content-nav-rectangle">Get Template</a>
+            </div>
+            <nav class="container">
+                <div class="ham-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+
+            <!-- header -->
+            <header class="container">
+                <div class="header-frame">
+                    <div class="header-content">
+                        <img
+                            src="../Pictures/Header/IMAGE.svg"
+                            alt="Wishbone + Partners Logo"
+                        />
+
+                        <nav class="header-content-nav">
+                            <img
+                                src="../Pictures/Utilities/Profile Pic.svg"
+                                alt=""
+                                id="header-content-nav-profile"
+                            />
+                            <a href="" class="header-content-nav-logout"
+                                >Log out</a
+                            >
+                            <a
+                                href="Authorization.html"
+                                class="header-content-nav-login"
+                                >Login</a
+                            >
+                            <a href="../index.html">Main Page</a>
+                            <a href="News.html" class="header-content-nav-news"
+                                >News</a
+                            >
+                            <div class="header-content-nav-rectangle">
+                                <span class="header-content-nav-rectangle-text"
+                                    >Get template</span
+                                >
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </header>
+        </div>
+
+        <script defer src="../JS/NewsLoginCheck.js"></script>
+        <script defer src="../JS/ProfileModalWindow.js"></script>
+        <script defer src="../JS/HamburgerMenu.js"></script>
+    </body>
+</html>
