@@ -11,18 +11,15 @@ let projectsSlider = new Swiper(".swiper", {
         onlyInViewport: true,
     },
 
-    slidesPerView: 2,
+    slidesPerView: 1,
     spaceBetween: 10,
     centeredSlides: true,
     initialSlides: 1,
     loop: true,
 
     breakpoints: {
-        1440: {
+        992: {
             slidesPerView: 2,
-        },
-        767: {
-            slidesPerView: 1,
         },
         420: {
             slidesPerView: 1,
