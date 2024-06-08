@@ -1,0 +1,42 @@
+{
+    "0": {
+        "text": "Guggenheim Museum",
+        "image": "../Pictures/Slider/GuggenheimMuseum.jpg"
+    },
+    "1": {
+        "text": "Sydney Opera House",
+        "image": "../Pictures/Slider/SydneyOperaHouse.jpg"
+    },
+    "2": {
+        "text": "Louvre Pyramid",
+        "image": "../Pictures/Slider/LouvrePyramid.jpg"
+    },
+    "3": {
+        "text": "Burj Khalifa",
+        "image": "../Pictures/Slider/BurjKhalifa.jpg"
+    },
+    "4": {
+        "text": "Fallingwater House",
+        "image": "../Pictures/Slider/FallingwaterHouse.jpg"
+    },
+    "5": {
+        "text": "Eiffel Tower",
+        "image": "../Pictures/Slider/EiffelTower.jpg"
+    },
+    "6": {
+        "text": "Sagrada Familia",
+        "image": "../Pictures/Slider/SagradaFamilia.jpg"
+    },
+    "7": {
+        "text": "Petronas Towers",
+        "image": "../Pictures/Slider/PetronasTowers.jpg"
+    },
+    "8": {
+        "text": "Acropolis of Athens",
+        "image": "../Pictures/Slider/AcropolisOfAthens.jpg"
+    },
+    "9": {
+        "text": "Reichstag Building",
+        "image": "../Pictures/Slider/ReichstagBuilding.jpg"
+    }
+}
