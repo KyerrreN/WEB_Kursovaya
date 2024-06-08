@@ -12,6 +12,7 @@ let projectsSlider = new Swiper(".swiper", {
     },
 
     slidesPerView: 2,
+    spaceBetween: 10,
     centeredSlides: true,
     initialSlides: 1,
     loop: true,
