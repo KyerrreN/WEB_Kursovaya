@@ -20,6 +20,9 @@ body {
 
     margin: 0px auto;
 }
+* {
+    font-family: Poppins;
+}
 /* ---------------------------------------------------------------------------- */
 /*                      Модальное окно */
 /* ---------------------------------------------------------------------------- */
@@ -52,7 +55,6 @@ body {
 .profile-content {
     background-color: white;
     max-width: 800px;
-    font-family: Poppins;
     color: black;
 
     padding: 30px;
@@ -269,6 +271,60 @@ nav.container {
 
     font-size: 32px;
     text-align: center;
+}
+
+.news-pagination {
+    height: 200px;
+    width: 800px;
+
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+}
+.news-pagination-navigation {
+    display: flex;
+    align-items: center;
+    background: white;
+    color: #383838;
+    gap: 30px;
+
+    padding: 10px 40px;
+    border-radius: 6px;
+}
+
+.news-pagination-navigation > ul {
+    padding: 0;
+}
+.news-pagination-navigation > ul > li {
+    display: inline-block;
+
+    margin: 0 10px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 45px;
+
+    cursor: pointer;
+    text-align: center;
+}
+.pagination-button {
+    display: inline-flex;
+    align-items: center;
+    font-size: 22px;
+    font-weight: 500;
+    color: #383838;
+    background: transparent;
+    outline: none;
+
+    border: none;
+    cursor: pointer;
+}
+.news-pagination-navigation > ul > li.active {
+    color: #fff;
+    background-image: linear-gradient(#ff4568, #ff4568);
+    background-repeat: no-repeat;
 }
 /* ---------------------------------------------------------------------------- */
 /*                                 footer */
