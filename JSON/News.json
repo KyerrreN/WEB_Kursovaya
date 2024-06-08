@@ -1,0 +1,22 @@
+{
+    "0": {
+        "header": "Wishbone + Partners' Sustainable Design",
+        "text": "Wishbone+Partners, a leading architecture firm, has unveiled its latest project - a groundbreaking design for a carbon-neutral, mixed-use development that redefines urban living. The innovative concept showcases the firm's commitment to sustainable design.",
+        "picture": "../Pictures/Main/IMAGE.svg"
+    },
+    "1": {
+        "header": "Wishbone + Partners Transforms Historic Building",
+        "text": "Wishbone+Partners has expertly renovated a historic downtown building, preserving its architectural integrity while seamlessly integrating modern design elements. The result is a stunning mixed-use space that blends the past and future.",
+        "picture": "../Pictures/Projects/First.svg"
+    },
+    "2": {
+        "header": "Wishbone + Partners Envisions Eco-Friendly Campus",
+        "text": "Wishbone+Partners has unveiled plans for an innovative, environmentally-friendly campus design that prioritizes renewable energy, water conservation, and green spaces. The project aims to set a new standard for sustainable development.",
+        "picture": "../Pictures/Projects/Second.svg"
+    },
+    "3": {
+        "header": "Wishbone + Partners Designs Cutting-Edge Residential Complex",
+        "text": "Wishbone+Partners' latest residential development features cutting-edge smart home technology, energy-efficient systems, and ample green spaces. The contemporary design coupled with innovative functionality redefines modern urban living.",
+        "picture": "../Pictures/Projects/Third.svg"
+    }
+}
