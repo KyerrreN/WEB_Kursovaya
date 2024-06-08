@@ -44,12 +44,22 @@ document.addEventListener("DOMContentLoaded", () => {
         );
 
     function changeSliderElements() {
+        let numbersOne = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+        let shuffledNumbers = shuffleElements(numbersOne);
+
         for (let i = 0; i < sliderElements.length; i++) {
-            // sliderElements[i].innerHTML = jsonData[i].text;
-            sliderElements[
-                i
-            ].style.backgroundImage = `url(${jsonData[i].image})`;
-            sliderElementsText[i].innerHTML = jsonData[i].text;
+            sliderElements[i].style.backgroundImage = `url(${
+                jsonData[shuffledNumbers[i]].image
+            })`;
+            sliderElementsText[i].innerHTML = jsonData[shuffledNumbers[i]].text;
         }
+    }
+
+    function shuffleElements(array) {
+        for (let i = array.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [array[i], array[j]] = [array[j], array[i]];
+        }
+        return array;
     }
 });
