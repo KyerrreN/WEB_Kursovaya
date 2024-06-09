@@ -3,6 +3,10 @@ document.addEventListener("DOMContentLoaded", () => {
     let hamLoginA = document.querySelector("#off-screen-menu-login");
     let headerLogout = document.querySelector(".header-content-nav-logout");
     let headerLogin = document.querySelector(".header-content-nav-login");
+    let hamAdminPanel = document.querySelector("#ham-admin");
+    let headerAdminPanel = document.querySelector(".header-content-nav-admin");
+    hamAdminPanel.style.display = "none";
+    headerAdminPanel.style.display = "none";
 
     if (localStorage.getItem("Logged") !== null) {
         // for admin
@@ -70,10 +74,6 @@ document.addEventListener("DOMContentLoaded", () => {
         let headerProfilePic = document.querySelector(
             "#header-content-nav-profile"
         );
-        let hamAdminPanel = document.querySelector("#ham-admin");
-        let headerAdminPanel = document.querySelector(
-            ".header-content-nav-admin"
-        );
 
         hamProjects.style.display = "none";
         hamTeam.style.display = "none";
@@ -83,7 +83,5 @@ document.addEventListener("DOMContentLoaded", () => {
         headerContact.style.display = "none";
         hamProfilePic.style.display = "none";
         headerProfilePic.style.display = "none";
-        hamAdminPanel.style.display = "none";
-        headerAdminPanel.style.display = "none";
     }
 });

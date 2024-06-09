@@ -249,6 +249,12 @@ nav.container {
     width: 30px;
     height: 30px;
 }
+.header-content-nav-admin {
+    display: none;
+}
+#ham-admin {
+    display: none;
+}
 /* ---------------------------------------------------------------------------- */
 /*                                  admin panel */
 /* ---------------------------------------------------------------------------- */
@@ -273,7 +279,6 @@ nav.container {
 table#admin-table {
     width: 100%;
     border-collapse: collapse;
-    font-family: Arial, sans-serif;
 }
 
 table#admin-table th,
