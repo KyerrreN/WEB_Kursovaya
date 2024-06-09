@@ -390,7 +390,7 @@ toRegister.addEventListener("click", () => {
         localStorage.setItem(localStorage.length + 1, userData);
 
         alert("You have successfully registered.");
-        window.location.replace("../index.html");
+        window.location.replace("Authorization.html");
     }
 });
 
