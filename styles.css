@@ -1174,6 +1174,16 @@ body {
     width: 24px;
     height: 24px;
 }
+.footer-content-text-button-theme,
+.footer-content-text-button-language {
+    background: none;
+    width: 200px;
+    height: 25px;
+}
+.footer-content-text-buttons {
+    display: flex;
+    justify-content: center;
+}
 /* ---------------------------------------------------------------------------- */
 /*                                  Медиа запросы */
 /* ---------------------------------------------------------------------------- */
@@ -1458,6 +1468,12 @@ body {
     .footer-content-socials {
         width: 300px;
     }
+    .footer-frame {
+        height: 200px;
+    }
+    .footer-content-text {
+        height: 300px;
+    }
 }
 @media (max-width: 767px) {
     .container {
@@ -1723,6 +1739,14 @@ body {
     }
     .footer-content-text-desc {
         width: 250px;
+    }
+    .footer-frame {
+        height: 230px;
+        padding-top: 20px;
+    }
+    .footer-content-text-buttons {
+        flex-direction: column;
+        gap: 10px;
     }
 }
 @media (max-width: 320px) {
