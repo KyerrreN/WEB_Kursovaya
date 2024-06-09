@@ -254,10 +254,59 @@ nav.container {
 /* ---------------------------------------------------------------------------- */
 .maps-frame {
     width: 100%;
-    padding: 20px 0;
+    padding: 20px 20px;
+
+    display: flex;
+    flex-direction: column;
 }
-.maps-content {
-    width: 80%;
+.maps-socials {
+    width: 40%;
+
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+
+    gap: 20px;
+}
+.maps-socials-header {
+    font-size: 30px;
+}
+.maps-socials-links {
+    font-size: 18px;
+}
+.maps-socials-links-block {
+    display: flex;
+
+    gap: 30px;
+}
+.maps-socials-links-block > a {
+    text-decoration: underline;
+    color: black;
+}
+.maps-socials-email {
+    display: flex;
+    gap: 0;
+}
+.maps-socials-email-input {
+    width: 300px;
+    height: 30px;
+
+    background-color: #f7f7f7;
+    border-radius: 5px;
+
+    font-size: 16px;
+}
+.maps-socials-email-button {
+    width: 100px;
+    background: none;
+
+    border-radius: 5px;
+}
+
+.maps-map {
+    width: 40%;
+
+    border: 1px solid black;
 }
 /* ---------------------------------------------------------------------------- */
 /*                                 footer */
