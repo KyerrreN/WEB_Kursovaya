@@ -250,6 +250,43 @@ nav.container {
     height: 30px;
 }
 /* ---------------------------------------------------------------------------- */
+/*                                  admin panel */
+/* ---------------------------------------------------------------------------- */
+.admin-frame {
+    width: 100%;
+    background-color: #cec4bc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.admin-intro {
+    padding: 20px 20px;
+
+    width: 60%;
+    text-align: center;
+}
+
+.admin-intro > span {
+    font-size: 30px;
+}
+
+table#admin-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+}
+
+table#admin-table th,
+table#admin-table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+table#admin-table th {
+    background-color: #f2f2f2;
+}
+/* ---------------------------------------------------------------------------- */
 /*                                 footer */
 /* ---------------------------------------------------------------------------- */
 .footer-frame {
@@ -421,6 +458,13 @@ nav.container {
     }
     .footer-content-text-desc {
         width: 250px;
+    }
+    /* ---------------------------------------------------------------------------- */
+    /*                                 admin */
+    /* ---------------------------------------------------------------------------- */
+    .admin-table-container {
+        width: 100%;
+        overflow-x: auto;
     }
 }
 @media (max-width: 320px) {

@@ -14,7 +14,7 @@
                     <div class="profile-content">
                         <a href="#" id="profile-close">X</a>
 
-                        <img src="Pictures/Header/IMAGE.svg" alt="" />
+                        <img src="../Pictures/Header/IMAGE.svg" alt="" />
                         <h1>
                             Here is your profile information. In case you forgot
                             any of your credentials, you can always look them up
@@ -124,6 +124,39 @@
                 </div>
             </header>
 
+            <!-- admin panel -->
+            <div class="container">
+                <div class="admin-frame">
+                    <div class="admin-intro">
+                        <span
+                            >Here is your admin panel, where you can see all
+                            user information, located in the local storage. You
+                            can also
+                            <a href="#admin-clear-ls"
+                                >clear local storage.</a
+                            ></span
+                        >
+                    </div>
+                    <div class="admin-table-container">
+                        <table id="admin-table">
+                            <thead>
+                                <tr>
+                                    <th>Nickname</th>
+                                    <th>First name</th>
+                                    <th>Last name</th>
+                                    <th>Patronymic</th>
+                                    <th>Password</th>
+                                    <th>Phone</th>
+                                    <th>Date of birth</th>
+                                    <th>Role</th>
+                                </tr>
+                            </thead>
+                            <tbody class="admin-table-body"></tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
             <!-- footer -->
             <footer class="container">
                 <div class="footer-frame">
@@ -183,5 +216,6 @@
         <script defer src="../JS/NewsLoginCheck.js"></script>
         <script defer src="../JS/ProfileModalWindow.js"></script>
         <script defer src="../JS/HamburgerMenu.js"></script>
+        <script defer src="../JS/AdminTable.js"></script>
     </body>
 </html>
