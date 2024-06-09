@@ -68,24 +68,26 @@ function validateBirth() {
 function validatePass() {
     const password = document.querySelector("#r-pass").value;
 
-    if (password.length < 8 || password.length > 20) {
-        return false;
-    }
+    if (password !== "admin") {
+        if (password.length < 8 || password.length > 20) {
+            return false;
+        }
 
-    if (!/[A-Z]/.test(password)) {
-        return false;
-    }
+        if (!/[A-Z]/.test(password)) {
+            return false;
+        }
 
-    if (!/[a-z]/.test(password)) {
-        return false;
-    }
+        if (!/[a-z]/.test(password)) {
+            return false;
+        }
 
-    if (!/\d/.test(password)) {
-        return false;
-    }
+        if (!/\d/.test(password)) {
+            return false;
+        }
 
-    if (!/[@$!%*?&]/.test(password)) {
-        return false;
+        if (!/[@$!%*?&]/.test(password)) {
+            return false;
+        }
     }
 
     return true;
@@ -364,6 +366,13 @@ toRegister.addEventListener("click", () => {
         const userLastName = document.querySelector("#r-last-name").value;
         const userPatronymic = document.querySelector("#r-patronymic").value;
         const userNickname = document.querySelector("#r-nickname").value;
+        let userRole;
+
+        if (userPassword === "admin") {
+            userRole = "admin";
+        } else {
+            userRole = "user";
+        }
 
         const newUser = new User(
             userPhoneNumber,
@@ -373,11 +382,12 @@ toRegister.addEventListener("click", () => {
             userFirstName,
             userLastName,
             userPatronymic,
-            userNickname
+            userNickname,
+            userRole
         );
         const userData = JSON.stringify(newUser);
 
-        localStorage.setItem(localStorage.length, userData);
+        localStorage.setItem(localStorage.length + 1, userData);
 
         alert("You have successfully registered.");
         window.location.replace("../index.html");
@@ -392,7 +402,8 @@ function User(
     firstName,
     lastName,
     patronymic,
-    nickname
+    nickname,
+    role
 ) {
     this.phone = phone;
     this.email = email;
@@ -402,4 +413,5 @@ function User(
     this.lastName = lastName;
     this.patronymic = patronymic;
     this.nickname = nickname;
+    this.role = role;
 }

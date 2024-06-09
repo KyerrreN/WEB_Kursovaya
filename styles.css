@@ -228,6 +228,12 @@ body {
     text-decoration: none;
     color: black;
 }
+.header-content-nav-admin {
+    display: none;
+}
+#ham-admin {
+    display: none;
+}
 .header-content-nav-rectangle {
     width: 155px;
     height: 46px;

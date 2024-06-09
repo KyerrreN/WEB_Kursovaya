@@ -23,6 +23,7 @@ profilePicHamEvent.addEventListener("click", () => {
         let divPhone = document.querySelector("#profile-content-phone");
         let divBirth = document.querySelector("#profile-content-birth");
         let divPassword = document.querySelector("#profile-content-password");
+        let divRole = document.querySelector("#profile-content-role");
 
         // fill divs with content parsed from local storage
         divNickname.innerHTML = userData.nickname;
@@ -32,6 +33,7 @@ profilePicHamEvent.addEventListener("click", () => {
         divPhone.innerHTML = userData.phone;
         divBirth.innerHTML = userData.birth;
         divPassword.innerHTML = userData.password;
+        divRole.innerHTML = userData.role;
     }
 
     const myModal = document.querySelector(".profile");
@@ -59,6 +61,7 @@ profilePicHeaderEvent.addEventListener("click", () => {
         let divPhone = document.querySelector("#profile-content-phone");
         let divBirth = document.querySelector("#profile-content-birth");
         let divPassword = document.querySelector("#profile-content-password");
+        let divRole = document.querySelector("#profile-content-role");
 
         // fill divs with content parsed from local storage
         divNickname.innerHTML = userData.nickname;
@@ -68,6 +71,7 @@ profilePicHeaderEvent.addEventListener("click", () => {
         divPhone.innerHTML = userData.phone;
         divBirth.innerHTML = userData.birth;
         divPassword.innerHTML = userData.password;
+        divRole.innerHTML = userData.role;
     }
 
     const myModal = document.querySelector(".profile");

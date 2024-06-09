@@ -5,6 +5,25 @@ document.addEventListener("DOMContentLoaded", () => {
     let headerLogin = document.querySelector(".header-content-nav-login");
 
     if (localStorage.getItem("Logged") !== null) {
+        // for admin
+        let splitUserData = JSON.parse(localStorage.getItem("Logged"));
+
+        if (splitUserData.role === "admin") {
+            let headerAdminPanel = document.querySelector(
+                ".header-content-nav-admin"
+            );
+            let hamAdminPanel = document.querySelector("#ham-admin");
+            let headerGetTemplate = document.querySelectorAll(
+                ".header-content-nav-rectangle"
+            );
+
+            hamAdminPanel.style.display = "block";
+            headerAdminPanel.style.display = "block";
+            for (let i = 0; i < headerGetTemplate.length; i++) {
+                headerGetTemplate[i].style.display = "none";
+            }
+        }
+
         hamLoginA.style.display = "none";
         headerLogin.style.display = "none";
 
@@ -51,6 +70,10 @@ document.addEventListener("DOMContentLoaded", () => {
         let headerProfilePic = document.querySelector(
             "#header-content-nav-profile"
         );
+        let hamAdminPanel = document.querySelector("#ham-admin");
+        let headerAdminPanel = document.querySelector(
+            ".header-content-nav-admin"
+        );
 
         hamProjects.style.display = "none";
         hamTeam.style.display = "none";
@@ -60,5 +83,7 @@ document.addEventListener("DOMContentLoaded", () => {
         headerContact.style.display = "none";
         hamProfilePic.style.display = "none";
         headerProfilePic.style.display = "none";
+        hamAdminPanel.style.display = "none";
+        headerAdminPanel.style.display = "none";
     }
 });
