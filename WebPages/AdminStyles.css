@@ -279,6 +279,8 @@ nav.container {
 table#admin-table {
     width: 100%;
     border-collapse: collapse;
+
+    margin-bottom: 20px;
 }
 
 table#admin-table th,
@@ -290,6 +292,9 @@ table#admin-table td {
 
 table#admin-table th {
     background-color: #f2f2f2;
+}
+#admin-intro-clear-local {
+    text-decoration: underline;
 }
 /* ---------------------------------------------------------------------------- */
 /*                                 footer */
