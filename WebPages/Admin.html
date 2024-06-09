@@ -4,7 +4,184 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="AdminStyles.css" type="text/css" />
-        <title>Document</title>
+        <title>Admin panel</title>
     </head>
-    <body></body>
+    <body>
+        <div class="wrapper">
+            <!-- modal window -->
+            <div class="profile" id="profile">
+                <div class="profile-frame">
+                    <div class="profile-content">
+                        <a href="#" id="profile-close">X</a>
+
+                        <img src="Pictures/Header/IMAGE.svg" alt="" />
+                        <h1>
+                            Here is your profile information. In case you forgot
+                            any of your credentials, you can always look them up
+                            here.
+                        </h1>
+
+                        <span></span>
+                        <p>Nickname</p>
+                        <div id="profile-content-nickname">1</div>
+
+                        <span></span>
+                        <p>First Name</p>
+                        <div id="profile-content-first-name"></div>
+
+                        <span></span>
+                        <p>Last Name</p>
+                        <div id="profile-content-last-name"></div>
+
+                        <span></span>
+                        <p>Patronymic</p>
+                        <div id="profile-content-patronymic"></div>
+
+                        <span></span>
+                        <p>Phone</p>
+                        <div id="profile-content-phone"></div>
+
+                        <span></span>
+                        <p>Date Of Birth</p>
+                        <div id="profile-content-birth"></div>
+
+                        <span></span>
+                        <p>Password</p>
+                        <div id="profile-content-password"></div>
+
+                        <span></span>
+                        <p>Role</p>
+                        <div id="profile-content-role"></div>
+
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ham menu -->
+            <div class="off-screen-menu">
+                <img
+                    src="../Pictures/Utilities/ProfilePic.svg"
+                    alt=""
+                    id="off-screen-menu-profile"
+                />
+                <a href="" id="off-screen-menu-logout">Log out</a>
+                <a href="Authorization.html" id="off-screen-menu-login"
+                    >Login</a
+                >
+                <a href="Admin.html" id="ham-admin">Admin panel</a>
+                <a href="../index.html">Main Page</a>
+                <a href="News.html">News</a>
+                <a href="" class="header-content-nav-rectangle">Get Template</a>
+            </div>
+            <nav class="container">
+                <div class="ham-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+
+            <!-- header -->
+            <header class="container">
+                <div class="header-frame">
+                    <div class="header-content">
+                        <img
+                            src="../Pictures/Header/IMAGE.svg"
+                            alt="Wishbone + Partners Logo"
+                        />
+
+                        <nav class="header-content-nav">
+                            <img
+                                src="../Pictures/Utilities/ProfilePic.svg"
+                                alt=""
+                                id="header-content-nav-profile"
+                            />
+                            <a href="" class="header-content-nav-logout"
+                                >Log out</a
+                            >
+                            <a
+                                href="Admin.html"
+                                class="header-content-nav-admin"
+                                >Admin panel</a
+                            >
+                            <a
+                                href="Authorization.html"
+                                class="header-content-nav-login"
+                                >Login</a
+                            >
+                            <a href="../index.html">Main Page</a>
+                            <a href="News.html" class="header-content-nav-news"
+                                >News</a
+                            >
+                            <div class="header-content-nav-rectangle">
+                                <span class="header-content-nav-rectangle-text"
+                                    >Get template</span
+                                >
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </header>
+
+            <!-- footer -->
+            <footer class="container">
+                <div class="footer-frame">
+                    <div class="footer-content">
+                        <div class="footer-content-text">
+                            <img src="../Pictures/Footer/Wishbone.svg" alt="" />
+
+                            <div class="footer-content-text-desc">
+                                <span class="footer-content-text-desc-powered"
+                                    >Powered by Webflow</span
+                                >
+
+                                <span class="footer-content-text-desc-powered"
+                                    >All rights reserved Wishbone+Partners,
+                                    Inc.Licensing</span
+                                >
+                            </div>
+                        </div>
+
+                        <div class="footer-content-socials">
+                            <a href="tel:+123456789">
+                                <img
+                                    src="../Pictures/Footer/Phone.svg"
+                                    alt=""
+                                    class="footer-content-socials-custom-pictures"
+                            /></a>
+                            <a href="mailto:kyerrrenmgt@gmail.com">
+                                <img
+                                    src="../Pictures/Footer/Email.svg"
+                                    alt=""
+                                    class="footer-content-socials-custom-pictures"
+                                />
+                            </a>
+                            <a href="https://github.com/KyerrreN">
+                                <img
+                                    src="../Pictures/Footer/Github.svg"
+                                    alt=""
+                                    class="footer-content-socials-custom-pictures"
+                                />
+                            </a>
+                            <a href="https://maps.app.goo.gl/FwnXMK7WkAswXwHa8">
+                                <img
+                                    src="../Pictures/Footer/Map.svg"
+                                    alt=""
+                                    class="footer-content-socials-custom-pictures"
+                                />
+                            </a>
+                            <img src="../Pictures/Footer/Twitter.svg" alt="" />
+                            <img src="../Pictures/Footer/Inst.svg" alt="" />
+                            <img src="../Pictures/Footer/FB.svg" alt="" />
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+        <script defer src="../JS/NewsLoginCheck.js"></script>
+        <script defer src="../JS/ProfileModalWindow.js"></script>
+        <script defer src="../JS/HamburgerMenu.js"></script>
+    </body>
 </html>
