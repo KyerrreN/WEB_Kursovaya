@@ -257,12 +257,12 @@ nav.container {
     padding: 20px 20px;
 
     display: flex;
-    flex-direction: column;
+
+    gap: 20px;
 }
 .maps-socials {
     width: 40%;
 
-    border: 1px solid black;
     display: flex;
     flex-direction: column;
 
@@ -304,9 +304,27 @@ nav.container {
 }
 
 .maps-map {
-    width: 40%;
+    width: 55%;
+}
+.maps-map-header {
+    font-size: 20px;
+}
+.maps-map-embedding {
+    display: flex;
+    justify-content: center;
+    padding: 10px 20px;
+    gap: 5px;
+}
 
-    border: 1px solid black;
+.maps-map-embedding > span {
+    align-self: center;
+}
+.maps-map-embedding > span:nth-child(2) {
+    font-size: 80px;
+}
+.maps-map-embedding > span:nth-child(3) {
+    font-size: 28px;
+    height: 30px;
 }
 /* ---------------------------------------------------------------------------- */
 /*                                 footer */
@@ -426,6 +444,18 @@ nav.container {
     .footer-content-socials {
         width: 300px;
     }
+    /* ---------------------------------------------------------------------------- */
+    /*                                  maps */
+    /* ---------------------------------------------------------------------------- */
+    .maps-frame {
+        flex-direction: column;
+    }
+    .maps-socials {
+        width: 100%;
+    }
+    .maps-map {
+        width: 100%;
+    }
 }
 @media (max-width: 767px) {
     .container {
@@ -480,6 +510,39 @@ nav.container {
     }
     .footer-content-text-desc {
         width: 250px;
+    }
+    /* ---------------------------------------------------------------------------- */
+    /*                                  maps */
+    /* ---------------------------------------------------------------------------- */
+    .maps-frame {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .maps-map-embedding {
+        flex-direction: column-reverse;
+        padding: 0;
+
+        align-items: center;
+    }
+    .maps-map-header {
+        display: block;
+        text-align: center;
+        width: 90%;
+    }
+    iframe {
+        width: 280px;
+    }
+    .maps-map-embedding > span:nth-child(2) {
+        rotate: calc(-90deg);
+    }
+    .maps-socials-email {
+        padding-right: 10px;
+    }
+    .maps-socials-email-input {
+        width: 200px;
+    }
+    .maps-socials {
+        align-items: center;
     }
 }
 @media (max-width: 320px) {
