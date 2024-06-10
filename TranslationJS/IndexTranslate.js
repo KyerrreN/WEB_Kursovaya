@@ -140,6 +140,12 @@ document.addEventListener("DOMContentLoaded", () => {
             "#team-content-people-frame-text-position-third": "Partner",
             "#team-content-people-frame-text-position-fourth": "Associate",
             "#team-content-people-frame-text-position-fivth": "Senior Partner",
+
+            //above footer
+            ".above-footer-content-text-header": "GET IN TOUCH",
+            ".above-footer-content-text-desc":
+                "Think we would be a good fit for your next project?",
+            ".above-footer-content-button-text": "Get in touch",
         },
         ru: {
             //modal
@@ -257,6 +263,12 @@ document.addEventListener("DOMContentLoaded", () => {
             "#team-content-people-frame-text-position-fourth":
                 "Младший партнер",
             "#team-content-people-frame-text-position-fivth": "Старший партнер",
+
+            //above footer
+            ".above-footer-content-text-header": "Связаться",
+            ".above-footer-content-text-desc":
+                "Вы думаете, мы подойдем для вашего следующего проекта?",
+            ".above-footer-content-button-text": "Связаться",
         },
     };
 
