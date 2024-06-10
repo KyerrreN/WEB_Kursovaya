@@ -694,7 +694,7 @@ body {
 }
 
 #clients-content-desc-name {
-    width: 129px;
+    width: 149px;
     color: #ece7e4;
     font-family: Poppins;
     font-size: 14px;
@@ -706,7 +706,7 @@ body {
 }
 
 #clients-content-desc-header {
-    width: 299px;
+    width: 359px;
     color: #fff;
     font-family: Poppins;
     font-size: 32px;
@@ -1601,7 +1601,7 @@ body {
     /*                                  clients */
     /* ---------------------------------------------------------------------------- */
     .clients-frame {
-        height: 730px;
+        height: 780px;
         display: flex;
         justify-content: center;
     }
@@ -1617,8 +1617,12 @@ body {
         width: 295px;
         height: 300px;
     }
+    #clients-content-desc-header {
+        width: 190px;
+    }
     .clients-content-companies {
-        padding: 0 0 0 0;
+        padding: 0;
+        padding-top: 30px;
         flex-wrap: nowrap;
         flex-direction: column;
         width: 220px;
