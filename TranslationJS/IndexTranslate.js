@@ -53,6 +53,7 @@ document.addEventListener("DOMContentLoaded", () => {
             "#ham-main-page": "Main Page",
             "#ham-contact": "Contact",
             "#ham-projects": "Projects",
+            "#ham-about": "About",
             "#ham-news": "News",
             "#ham-team": "Team",
             ".header-content-nav-rectangle": "Get template",
