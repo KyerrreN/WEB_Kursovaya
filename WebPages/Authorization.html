@@ -17,12 +17,25 @@
                             customers, as well as their privacy. Please, don't
                             use weak passwords.</span
                         >
+
+                        <div class="footer-content-text-buttons">
+                            <button
+                                class="footer-content-text-button-language to-change-text to-change-button"
+                            >
+                                Change language
+                            </button>
+                            <button
+                                class="footer-content-text-button-theme to-change-text to-change-button"
+                            >
+                                Change theme
+                            </button>
+                        </div>
                     </div>
                 </div>
 
                 <div class="auth-frame">
                     <div class="login">
-                        <p>
+                        <p class="login-introduction">
                             Welcome to Wishbone+Partners. Feel free to check out
                             our full webpage after registering. Please, proceed
                             with entering your nickname and password and enjoy
@@ -31,29 +44,31 @@
                         <button id="to-register">
                             Or did you mean to register?
                         </button>
-                        <label>
-                            Nickname
+                        <div class="login-form">
+                            <label class="auth-frame-login-nickname">
+                                Nickname
+                            </label>
                             <input
                                 type="text"
                                 maxlength="20"
                                 id="l-nickname"
                                 class="register-input"
                             />
-                        </label>
 
-                        <label>
-                            Password
+                            <label class="auth-frame-login-password">
+                                Password
+                            </label>
                             <input
                                 type="password"
                                 maxlength="20"
                                 id="l-pass"
                                 class="register-input"
                             />
-                        </label>
+                        </div>
                     </div>
 
                     <div class="register">
-                        <p>
+                        <p class="register-introduction">
                             Welcome to Wishbone+Partners. Fill out this form and
                             be a new awesome user of our platform with more
                             content awaiting you.
@@ -62,7 +77,11 @@
                             Or did you mean to log in?
                         </button>
                         <div class="register-input-validate">
-                            <label class="register-label">Phone</label>
+                            <label
+                                class="register-label"
+                                id="register-label-phone"
+                                >Phone</label
+                            >
                             <input
                                 type="text"
                                 maxlength="12"
@@ -84,7 +103,11 @@
                         </div>
 
                         <div class="register-input-validate">
-                            <label class="register-label">Email</label>
+                            <label
+                                class="register-label"
+                                id="register-label-email"
+                                >Email</label
+                            >
                             <input
                                 type="email"
                                 maxlength="25"
@@ -106,7 +129,11 @@
                         </div>
 
                         <div class="register-input-validate">
-                            <label class="register-label">Date of birth</label>
+                            <label
+                                class="register-label"
+                                id="register-label-birth"
+                                >Date of birth</label
+                            >
                             <input
                                 type="date"
                                 class="register-input"
@@ -134,7 +161,11 @@
                                     gap: 3px;
                                 "
                             >
-                                <label class="register-label">Password</label>
+                                <label
+                                    class="register-label"
+                                    id="register-label-pass"
+                                    >Password</label
+                                >
                                 <input
                                     type="password"
                                     maxlength="20"
@@ -158,7 +189,9 @@
                         </div>
 
                         <div class="register-input-validate">
-                            <label class="register-label"
+                            <label
+                                class="register-label"
+                                id="register-label-pass-confirm"
                                 >Confirm password</label
                             >
                             <input
@@ -182,7 +215,11 @@
                         </div>
 
                         <div class="register-input-validate">
-                            <label class="register-label">First name</label>
+                            <label
+                                class="register-label"
+                                id="register-label-first-name"
+                                >First name</label
+                            >
                             <input
                                 type="text"
                                 maxlength="20"
@@ -204,7 +241,11 @@
                         </div>
 
                         <div class="register-input-validate">
-                            <label class="register-label">Last name</label>
+                            <label
+                                class="register-label"
+                                id="register-label-last-name"
+                                >Last name</label
+                            >
                             <input
                                 type="text"
                                 maxlength="20"
@@ -226,7 +267,9 @@
                         </div>
 
                         <div class="register-input-validate">
-                            <label class="register-label"
+                            <label
+                                class="register-label"
+                                id="register-label-patronymic"
                                 >Patronymic (optional)</label
                             >
                             <input
@@ -257,7 +300,11 @@
                                     gap: 3px;
                                 "
                             >
-                                <label class="register-label">Nickname</label>
+                                <label
+                                    class="register-label"
+                                    id="register-label-nickname"
+                                    >Nickname</label
+                                >
                                 <input
                                     type="text"
                                     maxlength="20"
@@ -306,5 +353,8 @@
         <script defer src="../JS/RegistrationTemp.js"></script>
         <script defer src="../JS/SwitchAuthorization.js"></script>
         <script defer src="../JS/Login.js"></script>
+        <script defer src="../ThemeJS/Theme.js"></script>
+
+        <script defer src="../TranslationJS/AuthTranslation.js"></script>
     </body>
 </html>
