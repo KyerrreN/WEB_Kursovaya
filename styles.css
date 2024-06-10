@@ -1787,10 +1787,23 @@ body {
 /*  ---------------------------------------------------------------
                              animations 
 -------------------------------------------------------------------*/
-.header-content-nav > a {
+a {
     transition: color 0.5s ease;
 }
 
-.header-content-nav > a:hover {
+a:hover {
     color: red !important;
+}
+
+.firm-content-desc-text {
+    background-image: linear-gradient(90deg, red, blue);
+    background-size: 100% 3px;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-size: 0% 3px;
+    transition: background-size 500ms ease-in-out;
+}
+
+.firm-content-desc-text:hover {
+    background-size: 100% 3px;
 }
