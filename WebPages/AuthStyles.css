@@ -2,6 +2,10 @@
     font-family: "Poppins";
     src: url(../Fonts/Poppins.ttf);
 }
+@font-face {
+    font-family: "Roboto";
+    src: url(../Fonts/Roboto.ttf);
+}
 /* ---------------------------------------------------------------------------- */
 /*                      Нужные стили для адаптива */
 /* ---------------------------------------------------------------------------- */
@@ -213,6 +217,9 @@ body {
     border: 1px solid black;
     background-color: rgba(255, 0, 0, 0.4);
     border-radius: 5px;
+
+    font-family: Roboto;
+    text-align: center;
 }
 .footer-content-text-button-theme,
 .footer-content-text-button-language {

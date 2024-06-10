@@ -24,11 +24,28 @@ buttonToLogin.addEventListener("click", () => {
             const valueFromLS = localStorage.getItem(userId);
             localStorage.setItem("Logged", valueFromLS);
 
-            alert("You have succesfully logged in. Welcome, " + nickInput);
+            if (
+                localStorage.getItem("lang") === "en" ||
+                localStorage.getItem("lang") === null
+            ) {
+                alert("You have succesfully logged in. Welcome, " + nickInput);
+            } else {
+                alert(
+                    "Вход произведен успешно. Добро пожаловать, " + nickInput
+                );
+            }
+
             window.location.replace("../index.html");
             return;
         }
     }
 
-    alert("Error: invalid info");
+    if (
+        localStorage.getItem("lang") === "en" ||
+        localStorage.getItem("lang") === null
+    ) {
+        alert("Error: user doesnt exist");
+    } else {
+        alert("Ошибка: пользователя с такими данными не существует");
+    }
 });

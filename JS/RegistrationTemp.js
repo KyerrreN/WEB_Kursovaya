@@ -17,7 +17,15 @@ inputPhone.addEventListener("input", () => {
 
     if (!validatePhoneNumber()) {
         errorPhone.style.display = "block";
-        errorPhone.innerHTML = "Phone number must be from Belarus";
+
+        if (
+            localStorage.getItem("lang") === "en" ||
+            localStorage.getItem("lang") === null
+        ) {
+            errorPhone.innerHTML = "Phone number must be from Belarus";
+        } else {
+            errorPhone.innerHTML = "Номер телефона должен быть белорусским";
+        }
     } else {
         errorPhone.style.display = "none";
     }
@@ -28,7 +36,15 @@ inputEmail.addEventListener("input", () => {
 
     if (!validateEmail()) {
         errorEmail.style.display = "block";
-        errorEmail.innerHTML = "Email must be valid";
+
+        if (
+            localStorage.getItem("lang") === "en" ||
+            localStorage.getItem("lang") === null
+        ) {
+            errorEmail.innerHTML = "Email must be valid";
+        } else {
+            errorEmail.innerHTML = "Почта не соответствует шаблону";
+        }
     } else {
         errorEmail.style.display = "none";
     }
@@ -39,7 +55,15 @@ inputBirth.addEventListener("input", () => {
 
     if (!validateBirth()) {
         errorBirth.style.display = "block";
-        errorBirth.innerHTML = "You must be over 16";
+
+        if (
+            localStorage.getItem("lang") === "en" ||
+            localStorage.getItem("lang") === null
+        ) {
+            errorBirth.innerHTML = "You must be over 16";
+        } else {
+            errorBirth.innerHTML = "Вы должны быть старше 16";
+        }
     } else {
         errorBirth.style.display = "none";
     }
@@ -50,7 +74,15 @@ inputPass.addEventListener("input", () => {
 
     if (!validatePass()) {
         errorPass.style.display = "block";
-        errorPass.innerHTML = "Password is too weak";
+
+        if (
+            localStorage.getItem("lang") === "en" ||
+            localStorage.getItem("lang") === null
+        ) {
+            errorPass.innerHTML = "Password is too weak";
+        } else {
+            errorPass.innerHTML = "Слабый пароль";
+        }
     } else {
         errorPass.style.display = "none";
     }
@@ -115,7 +147,15 @@ inputPassConfirm.addEventListener("input", () => {
 
     if (!validatePassConfirm()) {
         errorPassConfirm.style.display = "block";
-        errorPassConfirm.innerHTML = "Passwords don't match";
+
+        if (
+            localStorage.getItem("lang") === "en" ||
+            localStorage.getItem("lang") === null
+        ) {
+            errorPassConfirm.innerHTML = "Passwords don't match";
+        } else {
+            errorPassConfirm.innerHTML = "Пароли не совпадают";
+        }
     } else {
         errorPassConfirm.style.display = "none";
     }
@@ -126,7 +166,15 @@ inputFirstName.addEventListener("input", () => {
 
     if (!validateFirstName()) {
         errorFirstName.style.display = "block";
-        errorFirstName.innerHTML = "First name is invalid";
+
+        if (
+            localStorage.getItem("lang") === "en" ||
+            localStorage.getItem("lang") === null
+        ) {
+            errorFirstName.innerHTML = "First name is invalid";
+        } else {
+            errorFirstName.innerHTML = "Имя не соответствует шаблону";
+        }
     } else {
         errorFirstName.style.display = "none";
     }
@@ -137,7 +185,15 @@ inputLastName.addEventListener("input", () => {
 
     if (!validateLastName()) {
         errorLastName.style.display = "block";
-        errorLastName.innerHTML = "Last name is invalid";
+
+        if (
+            localStorage.getItem("lang") === "en" ||
+            localStorage.getItem("lang") === null
+        ) {
+            errorLastName.innerHTML = "Last name is invalid";
+        } else {
+            errorLastName.innerHTML = "Фамилия не соответствует шаблону";
+        }
     } else {
         errorLastName.style.display = "none";
     }
@@ -150,7 +206,15 @@ inputPatronymic.addEventListener("input", () => {
 
     if (!validatePatronymic()) {
         errorPatronymic.style.display = "block";
-        errorPatronymic.innerHTML = "Patronymic is invalid";
+
+        if (
+            localStorage.getItem("lang") === "en" ||
+            localStorage.getItem("lang") === null
+        ) {
+            errorPatronymic.innerHTML = "Patronymic is invalid";
+        } else {
+            errorPatronymic.innerHTML = "Отчество не соответствует шаблону";
+        }
     } else {
         errorPatronymic.style.display = "none";
     }
@@ -161,10 +225,26 @@ inputNickname.addEventListener("input", () => {
 
     if (!validateNickname()) {
         errorNickname.style.display = "block";
-        errorNickname.innerHTML = "Nickname is invalid";
+
+        if (
+            localStorage.getItem("lang") === "en" ||
+            localStorage.getItem("lang") === null
+        ) {
+            errorNickname.innerHTML = "Nickname is invalid";
+        } else {
+            errorNickname.innerHTML = "Никнейм не соответствует шаблону";
+        }
     } else if (!checkNicknameIfTaken()) {
         errorNickname.style.display = "block";
-        errorNickname.innerHTML = "Nickname is taken";
+
+        if (
+            localStorage.getItem("lang") === "en" ||
+            localStorage.getItem("lang") === null
+        ) {
+            errorNickname.innerHTML = "Nickname is taken";
+        } else {
+            errorNickname.innerHTML = "Никнейм уже занят";
+        }
     } else {
         errorNickname.style.display = "none";
     }
@@ -177,10 +257,26 @@ nicknameRND.addEventListener("click", () => {
 
     if (!validateNickname()) {
         errorNickname.style.display = "block";
-        errorNickname.innerHTML = "Nickname is invalid";
+
+        if (
+            localStorage.getItem("lang") === "en" ||
+            localStorage.getItem("lang") === null
+        ) {
+            errorNickname.innerHTML = "Nickname is invalid";
+        } else {
+            errorNickname.innerHTML = "Никнейм не соответствует шаблону";
+        }
     } else if (!checkNicknameIfTaken()) {
         errorNickname.style.display = "block";
-        errorNickname.innerHTML = "Nickname is taken";
+
+        if (
+            localStorage.getItem("lang") === "en" ||
+            localStorage.getItem("lang") === null
+        ) {
+            errorNickname.innerHTML = "Nickname is taken";
+        } else {
+            errorNickname.innerHTML = "Никнейм уже занят";
+        }
     } else {
         errorNickname.style.display = "none";
     }
@@ -477,7 +573,14 @@ toRegister.addEventListener("click", () => {
 
         localStorage.setItem(localStorage.length + 1, userData);
 
-        alert("You have successfully registered.");
+        if (
+            localStorage.getItem("lang") === "en" ||
+            localStorage.getItem("lang") === null
+        ) {
+            alert("You have successfully registered.");
+        } else {
+            alert("Регистрация прошла успешно.");
+        }
         window.location.replace("Authorization.html");
     }
 });

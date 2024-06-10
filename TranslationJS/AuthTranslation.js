@@ -97,5 +97,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
 
         changeLanguage(translations);
+
+        location.reload();
     });
 });
