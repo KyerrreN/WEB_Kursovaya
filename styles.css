@@ -1814,3 +1814,11 @@ a:hover {
 .projects-examples > div:hover {
     filter: blur(2px);
 }
+
+/* 6 */
+button {
+    transition: transform 1s ease;
+}
+button:hover {
+    transform: scale(1.1);
+}
