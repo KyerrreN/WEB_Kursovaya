@@ -112,6 +112,11 @@ document.addEventListener("DOMContentLoaded", () => {
             "#clients-content-desc-header": "Happy customers.",
             "#clients-content-desc-text":
                 "Wishbone's client-centric approach earns rave reviews. Customers laud the firm's collaborative spirit and ability to actualize architectural visions.",
+
+            //third example
+            ".third-example-content-header": "THE SWIRLING STAIRCASE",
+            ".third-example-content-text":
+                "Sculptural staircase, architectural statement piece.",
         },
         ru: {
             //modal
@@ -200,6 +205,11 @@ document.addEventListener("DOMContentLoaded", () => {
             "#clients-content-desc-header": "Довольные покупатели",
             "#clients-content-desc-text":
                 "Клиентоориентированный подход Wishbone заслуживает восторженных отзывов. Клиенты высоко оценивают сотрудничество с фирмой и её способность воплощать архитектурные видения в жизнь.",
+
+            //third example
+            ".third-example-content-header": "ИЗВИВАЮЩАЯСЯ ЛЕСТНИЦА",
+            ".third-example-content-text":
+                "Скульптурная лестница, архитектурное заявление.",
         },
     };
 
