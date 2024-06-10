@@ -318,8 +318,8 @@ body {
         height: 80px;
 
         margin-bottom: 20px;
-        border-radius: 20%;
-        width: 200px;
+        border-radius: 25%;
+        width: 220px;
     }
 
     .auth-left-desc {
@@ -346,4 +346,30 @@ body {
         flex-direction: column;
         gap: 10px;
     }
+}
+.dark-theme-frame {
+    background-color: black !important;
+    border-color: black !important;
+}
+.dark-theme-text {
+    color: white !important;
+    text-decoration-color: white !important;
+}
+.dark-theme-ham {
+    background-color: white !important;
+}
+.dark-theme-logo {
+    filter: invert(100%);
+}
+.dark-theme-button {
+    border-color: white;
+}
+.dark-theme-line {
+    background-color: white !important;
+}
+.dark-theme-important-button {
+    background: rgb(71, 69, 69) !important;
+    border: 3px solid white !important;
+
+    color: white !important;
 }
