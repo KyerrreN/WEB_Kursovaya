@@ -123,6 +123,23 @@ document.addEventListener("DOMContentLoaded", () => {
             ".projects-text-desc":
                 "Some of the latest and greatest projects from us here at Wishbone+Partners.",
             ".projects-content-button-text": "View all projects",
+
+            //team
+            ".team-content-text-header": "Meet our team",
+            ".team-content-text-desc":
+                "Wishbone's multitalented team comprises visionary architects, experienced engineers, and skilled project managers dedicated to design excellence.",
+            ".team-content-text-button-text": "See team",
+            "#team-content-people-frame-text-name-first": "Stephen Collier",
+            "#team-content-people-frame-text-name-second": "Ferris Wonder",
+            "#team-content-people-frame-text-name-third": "Niko Ferry",
+            "#team-content-people-frame-text-name-fourth": "Nolan Peters",
+            "#team-content-people-frame-text-name-fivth": "Aria Stone",
+            "#team-content-people-frame-text-position-first": "Senior Partner",
+            "#team-content-people-frame-text-position-second":
+                "Associate Partner",
+            "#team-content-people-frame-text-position-third": "Partner",
+            "#team-content-people-frame-text-position-fourth": "Associate",
+            "#team-content-people-frame-text-position-fivth": "Senior Partner",
         },
         ru: {
             //modal
@@ -222,6 +239,24 @@ document.addEventListener("DOMContentLoaded", () => {
             ".projects-text-desc":
                 "Некоторые из последних и величайших проектов от нас, Wishbone+Partners.",
             ".projects-content-button-text": "Посмотреть все.",
+
+            //team
+            ".team-content-text-header": "Наша команда",
+            ".team-content-text-desc":
+                "Команда Wishbone объединяет архитекторов-визионеров, опытных инженеров и умелых менеджеров проектов, посвященных совершенству дизайна.",
+            ".team-content-text-button-text": "Посмотреть команду",
+            "#team-content-people-frame-text-name-first": "Стефен Колье",
+            "#team-content-people-frame-text-name-second": "Феррис Вандер",
+            "#team-content-people-frame-text-name-third": "Нико Ферри",
+            "#team-content-people-frame-text-name-fourth": "Нолан Питерс",
+            "#team-content-people-frame-text-name-fivth": "Ариа Стоун",
+            "#team-content-people-frame-text-position-first": "Старший партнер",
+            "#team-content-people-frame-text-position-second":
+                "Ассоциативный партнер",
+            "#team-content-people-frame-text-position-third": "Партнер",
+            "#team-content-people-frame-text-position-fourth":
+                "Младший партнер",
+            "#team-content-people-frame-text-position-fivth": "Старший партнер",
         },
     };
 
