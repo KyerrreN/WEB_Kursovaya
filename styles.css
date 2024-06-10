@@ -1839,3 +1839,11 @@ button:hover {
         transform: scale(1);
     }
 }
+
+/* 8  */
+#main-picture {
+    transition: filter 0.5s ease;
+}
+#main-picture:hover {
+    filter: blur(2px);
+}
