@@ -648,3 +648,21 @@ nav.container {
         max-width: none;
     }
 }
+.dark-theme-frame {
+    background-color: black !important;
+}
+.dark-theme-text {
+    color: white !important;
+}
+.dark-theme-ham {
+    background-color: white !important;
+}
+.dark-theme-logo {
+    filter: invert(100%);
+}
+.dark-theme-button {
+    border-color: white;
+}
+.dark-theme-line {
+    background-color: white !important;
+}
