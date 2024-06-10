@@ -621,3 +621,11 @@ nav.container {
         transform: scale(1);
     }
 }
+.footer-content-socials > img,
+.footer-content-socials > a > img {
+    transition: transform 1s ease-out;
+}
+.footer-content-socials > img:hover,
+.footer-content-socials > a > img:hover {
+    transform: rotate(360deg);
+}

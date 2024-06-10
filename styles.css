@@ -1855,3 +1855,13 @@ button:hover {
 .team-content-people-frame > img:hover {
     transform: scale(1.1);
 }
+
+/* 10 */
+.footer-content-socials > img,
+.footer-content-socials > a > img {
+    transition: transform 1s ease-out;
+}
+.footer-content-socials > img:hover,
+.footer-content-socials > a > img:hover {
+    transform: rotate(360deg);
+}
