@@ -673,3 +673,19 @@ nav.container {
 .header-content-nav > a:hover {
     color: red !important;
 }
+
+.footer-content-text > img {
+    animation: footer-image-pulse 2s infinite;
+}
+
+@keyframes footer-image-pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.02);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
