@@ -23,23 +23,58 @@ document.addEventListener("DOMContentLoaded", () => {
         contentBackground.style.backgroundImage = `url(${jsonPagination[index].picture})`;
     }
 
-    fetch("../JSON/News.json")
-        .then((response) => {
-            if (!response.ok) {
-                throw new Error("Fetch error: " + response.statusText);
-            }
-            return response.json();
-        })
-        .then((data) => {
-            jsonPagination = data;
-            changeContentInPagination(0);
-        })
-        .catch((error) =>
-            console.error(
-                "Error while fetching the data from local JSON file ",
-                error
-            )
+    if (
+        localStorage.getItem("lang") === "en" ||
+        localStorage.getItem("lang") === null
+    ) {
+        fetch("../JSON/News.json")
+            .then((response) => {
+                if (!response.ok) {
+                    throw new Error("Fetch error: " + response.statusText);
+                }
+                return response.json();
+            })
+            .then((data) => {
+                jsonPagination = data;
+                changeContentInPagination(0);
+            })
+            .catch((error) =>
+                console.error(
+                    "Error while fetching the data from local JSON file ",
+                    error
+                )
+            );
+    } else {
+        fetch("../JSON/NewsRU.json")
+            .then((response) => {
+                if (!response.ok) {
+                    throw new Error("Fetch error: " + response.statusText);
+                }
+                return response.json();
+            })
+            .then((data) => {
+                jsonPagination = data;
+                changeContentInPagination(0);
+            })
+            .catch((error) =>
+                console.error(
+                    "Error while fetching the data from local JSON file ",
+                    error
+                )
+            );
+
+        let elementsToChangeFont = [];
+        elementsToChangeFont.push(
+            document.querySelector(".news-pagination-content-header")
         );
+        elementsToChangeFont.push(
+            document.querySelector(".news-pagination-content-text")
+        );
+
+        for (let i = 0; i < elementsToChangeFont.length; i++) {
+            elementsToChangeFont[i].style.fontFamily = "Roboto";
+        }
+    }
 
     function removeActiveLi() {
         for (num of paginationNumber) {
