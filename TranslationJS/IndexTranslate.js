@@ -27,6 +27,7 @@ function changeLanguage(translations) {
 document.addEventListener("DOMContentLoaded", () => {
     const translations = {
         en: {
+            //modal
             ".modal-header":
                 "Here is your profile information. In case you forgot any of your credentials, you can always look them up here.",
             ".modal-nickname": "Nickname",
@@ -38,13 +39,36 @@ document.addEventListener("DOMContentLoaded", () => {
             ".modal-pass": "Password",
             ".modal-role": "Role",
 
+            //footer
             ".footer-content-text-desc-powered": "Powered by Webflow",
             "#footer-content-text-desc-powered-second":
                 "All rights reserved Wishbone+Partners, Inc.Licensing",
             ".footer-content-text-button-language": "Change language",
             ".footer-content-text-button-theme": "Change theme",
+
+            //ham + header
+            "#off-screen-menu-logout": "Log out",
+            "#off-screen-menu-login": "Login",
+            "#ham-admin": "Admin panel",
+            "#ham-main-page": "Main Page",
+            "#ham-contact": "Contact",
+            "#ham-projects": "Projects",
+            "#ham-news": "News",
+            "#ham-team": "Team",
+            ".header-content-nav-rectangle": "Get template",
+            ".header-content-nav-logout": "Log out",
+            ".header-content-nav-admin": "Admin panel",
+            ".header-content-nav-login": "Login",
+            ".header-content-nav-main-page": "Main Page",
+            ".header-content-nav-news": "News",
+            ".header-content-nav-rectangle-text": "Get template",
+            ".header-content-nav-projects": "Projects",
+            ".header-content-nav-about": "About",
+            ".header-content-nav-team": "Team",
+            ".header-content-nav-contact": "Contact",
         },
         ru: {
+            //modal
             ".modal-header":
                 "Здесь находятся ваши персональные данные. На случай если вы забыли учетные данные, вы всегда можете посмотреть их здесь.",
             ".modal-nickname": "Никнейм",
@@ -56,11 +80,34 @@ document.addEventListener("DOMContentLoaded", () => {
             ".modal-pass": "Пароль",
             ".modal-role": "Роль",
 
+            //footer
             ".footer-content-text-desc-powered": "Предоставлено от Webflow",
             "#footer-content-text-desc-powered-second":
                 "Все права защищены Wishbone+Partners, Inc.Licensing",
             ".footer-content-text-button-language": "Сменить язык",
             ".footer-content-text-button-theme": "Сменить тему",
+
+            //ham + header
+            "#off-screen-menu-logout": "Выйти",
+            "#off-screen-menu-login": "Войти",
+            "#ham-admin": "Админ панель",
+            "#ham-team": "Команда",
+            "#ham-contact": "Связаться",
+            "#ham-projects": "Проекты",
+            "#ham-about": "О нас",
+            "#ham-main-page": "Главная",
+            "#ham-news": "Новости",
+            ".header-content-nav-rectangle": "Получить набросок",
+            ".header-content-nav-logout": "Выйти",
+            ".header-content-nav-admin": "Админ панель",
+            ".header-content-nav-login": "Войти",
+            ".header-content-nav-news": "Новости",
+            ".header-content-nav-main-page": "Главная",
+            ".header-content-nav-rectangle-text": "Получить набросок",
+            ".header-content-nav-projects": "Проекты",
+            ".header-content-nav-about": "О нас",
+            ".header-content-nav-team": "Команда",
+            ".header-content-nav-contact": "Связаться",
         },
     };
 
