@@ -1784,3 +1784,13 @@ body {
 .dark-theme-line {
     background-color: white !important;
 }
+/*  ---------------------------------------------------------------
+                             animations 
+-------------------------------------------------------------------*/
+.header-content-nav > a {
+    transition: color 0.5s ease;
+}
+
+.header-content-nav > a:hover {
+    color: red !important;
+}
