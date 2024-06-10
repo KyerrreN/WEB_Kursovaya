@@ -66,6 +66,12 @@ document.addEventListener("DOMContentLoaded", () => {
             ".header-content-nav-about": "About",
             ".header-content-nav-team": "Team",
             ".header-content-nav-contact": "Contact",
+
+            //main
+            ".main-content-header": "The home of beautiful architecture.",
+            ".main-content-span":
+                "We are an architecture firm with a focus on beautiful but functional design. At its heart, we believe design is about usability and accessibility — these are the guiding principles for our work. Read more about our previous projects, our process and our team below.",
+            ".main-content-button-text": "Read more",
         },
         ru: {
             //modal
@@ -108,6 +114,12 @@ document.addEventListener("DOMContentLoaded", () => {
             ".header-content-nav-about": "О нас",
             ".header-content-nav-team": "Команда",
             ".header-content-nav-contact": "Связаться",
+
+            //main
+            ".main-content-header": "Место красивой архитектуры",
+            ".main-content-span":
+                "Мы - архитектурная фирма, специализирующаяся на красивом, но функциональном дизайне. В самом сердце нашей работы мы верим, что дизайн - это о практичности и доступности - эти принципы лежат в основе нашей деятельности. Ниже вы можете прочитать больше о наших предыдущих проектах, нашем процессе и нашей команде.",
+            ".main-content-button-text": "Подробнее...",
         },
     };
 
