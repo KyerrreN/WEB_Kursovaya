@@ -191,7 +191,7 @@ nav.container {
     display: flex;
     justify-content: center;
 
-    background: #fff;
+    background-color: #fff;
     box-shadow: 11px 11px 25px 0px rgba(9, 7, 37, 0.06);
 }
 .header-content {
@@ -509,4 +509,19 @@ table#admin-table th {
     .container {
         max-width: none;
     }
+}
+.dark-theme-frame {
+    background-color: black !important;
+}
+.dark-theme-text {
+    color: white !important;
+}
+.dark-theme-ham {
+    background-color: white !important;
+}
+.dark-theme-logo {
+    filter: invert(100%);
+}
+.dark-theme-button {
+    border-color: white;
 }
