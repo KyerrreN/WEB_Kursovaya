@@ -1,0 +1,42 @@
+{
+    "0": {
+        "text": "Музей Гуггенхайма",
+        "image": "../Pictures/Slider/GuggenheimMuseum.jpg"
+    },
+    "1": {
+        "text": "Сиднейский оперный театр",
+        "image": "../Pictures/Slider/SydneyOperaHouse.jpg"
+    },
+    "2": {
+        "text": "Пирамида Лувра",
+        "image": "../Pictures/Slider/LouvrePyramid.jpg"
+    },
+    "3": {
+        "text": "Бурж Халифа",
+        "image": "../Pictures/Slider/BurjKhalifa.jpg"
+    },
+    "4": {
+        "text": "Дом над водопадом",
+        "image": "../Pictures/Slider/FallingwaterHouse.jpg"
+    },
+    "5": {
+        "text": "Эйфелева башня",
+        "image": "../Pictures/Slider/EiffelTower.jpg"
+    },
+    "6": {
+        "text": "Саграда Фамилия",
+        "image": "../Pictures/Slider/SagradaFamilia.jpg"
+    },
+    "7": {
+        "text": "Башни Петронас",
+        "image": "../Pictures/Slider/PetronasTowers.jpg"
+    },
+    "8": {
+        "text": "Афинский Акрополь",
+        "image": "../Pictures/Slider/AcropolisOfAthens.jpg"
+    },
+    "9": {
+        "text": "Рейхстаг",
+        "image": "../Pictures/Slider/ReichstagBuilding.jpg"
+    }
+}
