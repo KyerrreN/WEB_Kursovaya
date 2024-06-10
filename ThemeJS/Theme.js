@@ -4,6 +4,7 @@ function setTheme() {
     const elementsHamMenu = document.querySelectorAll(".to-change-ham");
     const elementsLogo = document.querySelectorAll(".to-change-logo");
     const elementsButton = document.querySelectorAll(".to-change-button");
+    const elementsLine = document.querySelectorAll(".to-change-line");
 
     for (const element of elementsThemeFrame) {
         element.classList.toggle("dark-theme-frame");
@@ -23,6 +24,10 @@ function setTheme() {
 
     for (const element of elementsButton) {
         element.classList.toggle("dark-theme-button");
+    }
+
+    for (const element of elementsLine) {
+        element.classList.toggle("dark-theme-line");
     }
 }
 function changeTheme() {

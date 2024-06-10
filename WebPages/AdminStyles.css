@@ -525,3 +525,6 @@ table#admin-table th {
 .dark-theme-button {
     border-color: white;
 }
+.dark-theme-line {
+    background-color: white !important;
+}
