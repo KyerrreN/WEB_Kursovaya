@@ -72,6 +72,17 @@ document.addEventListener("DOMContentLoaded", () => {
             ".main-content-span":
                 "We are an architecture firm with a focus on beautiful but functional design. At its heart, we believe design is about usability and accessibility — these are the guiding principles for our work. Read more about our previous projects, our process and our team below.",
             ".main-content-button-text": "Read more",
+
+            //our firm
+            ".firm-our": "Our firm",
+            "#firm-content-desc-text-first":
+                "Wishbone Architecture is a leading design firm specializing in innovative and sustainable buildings. Founded in 2010, the firm has quickly established a reputation for creative solutions that push the boundaries of traditional architecture. With a team of highly skilled designers, engineers, and project managers, Wishbone takes on a diverse range of projects.",
+            "#firm-content-desc-text-second":
+                "At the heart of Wishbone's approach is a deep commitment to environmentally-conscious design. The firm utilizes the latest green building techniques and technologies to minimize the carbon footprint of its projects, while also ensuring the highest standards of livability and functionality. This holistic philosophy has earned Wishbone numerous awards and accolades.",
+            "#firm-content-desc-text-third":
+                "Beyond its design expertise, Wishbone is known for its collaborative workflow and client-centric service. The firm works closely with stakeholders throughout the entire project lifecycle, from initial concept to final construction, to exceed expectations. This dedication to transparency has earned Wishbone a loyal client base entrusting the firm with ambitious visions.",
+            ".firm-content-desc-author-cred-name": "Stephen Collier",
+            ".firm-content-desc-author-cred-position": "Senior Partner",
         },
         ru: {
             //modal
@@ -120,6 +131,17 @@ document.addEventListener("DOMContentLoaded", () => {
             ".main-content-span":
                 "Мы - архитектурная фирма, специализирующаяся на красивом, но функциональном дизайне. В самом сердце нашей работы мы верим, что дизайн - это о практичности и доступности - эти принципы лежат в основе нашей деятельности. Ниже вы можете прочитать больше о наших предыдущих проектах, нашем процессе и нашей команде.",
             ".main-content-button-text": "Подробнее...",
+
+            //our firm
+            ".firm-our": "Наша компания",
+            "#firm-content-desc-text-first":
+                "Архитектурная компания Wishbone - ведущая дизайн-фирма, специализирующаяся на инновационных и экологичных зданиях. Основанная в 2010 году, фирма быстро заслужила репутацию творческих решений, которые выходят за рамки архитектуры. Имея в своей команде высококвалифицированных инженеров и менеджеров проектов, Wishbone берется за разнообразные проекты.",
+            "#firm-content-desc-text-second":
+                "В основе подхода Wishbone лежит глубокая приверженность экологически ответственному дизайну. Фирма использует новейшие строительные методики и технологии, чтобы минимизировать углеродный след своих проектов, при этом также обеспечивая высочайшие стандарты комфорта и функциональности.",
+            "#firm-content-desc-text-third":
+                "Помимо экспертизы в дизайне, Wishbone известна своим совместным рабочим процессом и клиентоориентированным сервисом. Фирма сотрудничает с заинтересованными сторонами на протяжении всего жизненного цикла проекта - от концепции до строительства - чтобы превзойти ожидания. Эта приверженность прозрачности принесла Wishbone лояльную клиентскую базу, доверяющую фирме амбициозные замыслы",
+            ".firm-content-desc-author-cred-name": "Стефен Колье",
+            ".firm-content-desc-author-cred-position": "Старший партнер",
         },
     };
 

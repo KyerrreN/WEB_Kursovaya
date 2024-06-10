@@ -1321,7 +1321,7 @@ body {
     /* ---------------------------------------------------------------------------- */
     #firm-frame {
         margin-top: 20px;
-        height: 700px;
+        height: 720px;
     }
     .firm-content {
         flex-direction: column;
@@ -1557,7 +1557,7 @@ body {
         max-width: 420px;
     }
     #firm-frame {
-        height: 980px;
+        height: 1000px;
     }
     .firm-content-desc-text {
         width: 320px;
