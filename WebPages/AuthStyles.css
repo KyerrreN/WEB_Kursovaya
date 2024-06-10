@@ -114,7 +114,6 @@ body {
 .register {
     width: 100%;
     height: 100%;
-    /* display: flex; */
     display: none;
     flex-direction: column;
     gap: 32px;
@@ -149,7 +148,7 @@ body {
 }
 .register-input {
     text-align: center;
-    width: 200px;
+    width: 220px;
     font-family: Poppins;
 }
 #register-label-tac {
@@ -195,7 +194,6 @@ body {
     height: 15px;
     display: none;
 }
-
 #e-birth {
     transform: translateX(-1180%);
 }
@@ -208,6 +206,15 @@ body {
 #e-nickname {
     transform: translate(-1200%, -120%);
 }
+
+.register-visible-error {
+    display: none;
+    width: 228px;
+    border: 1px solid black;
+    background-color: rgba(255, 0, 0, 0.4);
+    border-radius: 5px;
+}
+
 /* ---------------------------------------------------------------------------- */
 /*                      login */
 /* ---------------------------------------------------------------------------- */
@@ -215,7 +222,6 @@ body {
     width: 100%;
     height: 1000px;
     display: flex;
-    /* display: none; */
     flex-direction: column;
     gap: 32px;
     padding-top: 10px;
