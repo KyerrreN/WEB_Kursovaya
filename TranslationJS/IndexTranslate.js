@@ -83,6 +83,11 @@ document.addEventListener("DOMContentLoaded", () => {
                 "Beyond its design expertise, Wishbone is known for its collaborative workflow and client-centric service. The firm works closely with stakeholders throughout the entire project lifecycle, from initial concept to final construction, to exceed expectations. This dedication to transparency has earned Wishbone a loyal client base entrusting the firm with ambitious visions.",
             ".firm-content-desc-author-cred-name": "Stephen Collier",
             ".firm-content-desc-author-cred-position": "Senior Partner",
+
+            //first example
+            ".first-example-content-name": "REEDING HOUSE",
+            ".first-example-content-desc":
+                "Modern, eco-friendly, minimalist design.",
         },
         ru: {
             //modal
@@ -142,6 +147,11 @@ document.addEventListener("DOMContentLoaded", () => {
                 "Помимо экспертизы в дизайне, Wishbone известна своим совместным рабочим процессом и клиентоориентированным сервисом. Фирма сотрудничает с заинтересованными сторонами на протяжении всего жизненного цикла проекта - от концепции до строительства - чтобы превзойти ожидания. Эта приверженность прозрачности принесла Wishbone лояльную клиентскую базу, доверяющую фирме амбициозные замыслы",
             ".firm-content-desc-author-cred-name": "Стефен Колье",
             ".firm-content-desc-author-cred-position": "Старший партнер",
+
+            //first example
+            ".first-example-content-name": "ИЗВИЛИСТЫЙ ДОМ",
+            ".first-example-content-desc":
+                "Современный, экологичный, минималистичный дизайн.",
         },
     };
 
