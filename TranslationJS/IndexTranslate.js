@@ -101,6 +101,11 @@ document.addEventListener("DOMContentLoaded", () => {
             "#our-process-content-desc-building": "Building",
             "#our-process-content-desc-right":
                 "Wishbone expertly oversees construction, translating designs into sustainable, functional buildings.",
+
+            //second example
+            ".second-example-content-header": "THE MARBLE STAIRCASE",
+            ".second-example-content-text":
+                "Elegant marble staircase, architectural centerpiece.",
         },
         ru: {
             //modal
@@ -178,6 +183,11 @@ document.addEventListener("DOMContentLoaded", () => {
             "#our-process-content-desc-building": "Построение",
             "#our-process-content-desc-right":
                 "Wishbone профессионально контролирует строительство, воплощая проекты в устойчивые, функциональные здания.",
+
+            //second example
+            ".second-example-content-header": "МРАМОРНАЯ ЛЕСТНИЦА",
+            ".second-example-content-text":
+                "Элегантная мраморная лестница, архитектурная доминанта.",
         },
     };
 
