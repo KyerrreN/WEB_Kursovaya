@@ -18,6 +18,11 @@ function changeLanguage(translations) {
             }
         }
     }
+
+    const getTemplateAlign = document.querySelector(
+        ".header-content-nav-rectangle-text"
+    );
+    getTemplateAlign.style.textAlign = "center";
 }
 document.addEventListener("DOMContentLoaded", () => {
     const translations = {
