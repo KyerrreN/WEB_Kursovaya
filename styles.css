@@ -1787,6 +1787,7 @@ body {
 /*  ---------------------------------------------------------------
                              animations 
 -------------------------------------------------------------------*/
+/* 3 */
 a {
     transition: color 0.5s ease;
 }
@@ -1795,6 +1796,7 @@ a:hover {
     color: red !important;
 }
 
+/* 4 */
 .firm-content-desc-text {
     background-image: linear-gradient(90deg, red, blue);
     background-size: 100% 3px;
@@ -1806,4 +1808,9 @@ a:hover {
 
 .firm-content-desc-text:hover {
     background-size: 100% 3px;
+}
+
+/* 5 */
+.projects-examples > div:hover {
+    filter: blur(2px);
 }
