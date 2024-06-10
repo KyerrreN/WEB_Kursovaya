@@ -1847,3 +1847,11 @@ button:hover {
 #main-picture:hover {
     filter: blur(2px);
 }
+
+/* 9 */
+.team-content-people-frame > img {
+    transition: transform 1s ease;
+}
+.team-content-people-frame > img:hover {
+    transform: scale(1.1);
+}
