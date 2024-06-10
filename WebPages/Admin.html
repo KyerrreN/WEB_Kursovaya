@@ -70,9 +70,8 @@
                     >Login</a
                 >
                 <a href="Admin.html" id="ham-admin">Admin panel</a>
-                <a href="../index.html">Main Page</a>
-                <a href="News.html">News</a>
-                <a href="" class="header-content-nav-rectangle">Get Template</a>
+                <a href="../index.html" id="ham-main-page">Main Page</a>
+                <a href="News.html" id="ham-news">News</a>
             </div>
             <nav class="container">
                 <div class="ham-menu">
@@ -110,15 +109,14 @@
                                 class="header-content-nav-login"
                                 >Login</a
                             >
-                            <a href="../index.html">Main Page</a>
+                            <a
+                                href="../index.html"
+                                class="header-content-nav-main-page"
+                                >Main Page</a
+                            >
                             <a href="News.html" class="header-content-nav-news"
                                 >News</a
                             >
-                            <div class="header-content-nav-rectangle">
-                                <span class="header-content-nav-rectangle-text"
-                                    >Get template</span
-                                >
-                            </div>
                         </nav>
                     </div>
                 </div>
@@ -128,27 +126,27 @@
             <div class="container">
                 <div class="admin-frame">
                     <div class="admin-intro">
-                        <span>
+                        <span id="admin-intro-header">
                             Here is your admin panel, where you can see all user
                             information, located in the local storage. You can
                             also
-                            <span id="admin-intro-clear-local"
-                                >clear local storage.</span
-                            >
                         </span>
+                        <span id="admin-intro-clear-local"
+                            >clear local storage.</span
+                        >
                     </div>
                     <div class="admin-table-container">
                         <table id="admin-table">
                             <thead>
                                 <tr>
-                                    <th>Nickname</th>
-                                    <th>First name</th>
-                                    <th>Last name</th>
-                                    <th>Patronymic</th>
-                                    <th>Password</th>
-                                    <th>Phone</th>
-                                    <th>Date of birth</th>
-                                    <th>Role</th>
+                                    <th id="th-first">Nickname</th>
+                                    <th id="th-second">First name</th>
+                                    <th id="th-third">Last name</th>
+                                    <th id="th-fourth">Patronymic</th>
+                                    <th id="th-fivth">Password</th>
+                                    <th id="th-sixth">Phone</th>
+                                    <th id="th-seventh">Date of birth</th>
+                                    <th id="th-eighth">Role</th>
                                 </tr>
                             </thead>
                             <tbody class="admin-table-body"></tbody>
