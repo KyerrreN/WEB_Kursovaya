@@ -796,7 +796,7 @@ body {
     gap: 15px;
 }
 .projects-text-header {
-    width: 351px;
+    width: 391px;
     color: #1b1a1a;
     font-family: Poppins;
     font-size: 39px;
@@ -1411,6 +1411,7 @@ body {
         display: flex;
         justify-content: center;
         width: 500px;
+        text-align: center;
     }
     .projects-content-button {
         top: 1000px;
@@ -1664,6 +1665,7 @@ body {
     .projects-text-desc {
         left: 15px;
         width: 300px;
+        text-align: start;
     }
     .projects-examples {
         left: 0;
@@ -1672,9 +1674,6 @@ body {
     .projects-examples-pictures {
         left: 0;
         width: 240px;
-    }
-    .projects-examples-pictures-position {
-        left: 10px;
     }
     .projects-examples-second {
         background-position-x: 90%;

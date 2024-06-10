@@ -117,6 +117,12 @@ document.addEventListener("DOMContentLoaded", () => {
             ".third-example-content-header": "THE SWIRLING STAIRCASE",
             ".third-example-content-text":
                 "Sculptural staircase, architectural statement piece.",
+
+            //featured projects
+            ".projects-text-header": "Featured projects",
+            ".projects-text-desc":
+                "Some of the latest and greatest projects from us here at Wishbone+Partners.",
+            ".projects-content-button-text": "View all projects",
         },
         ru: {
             //modal
@@ -210,6 +216,12 @@ document.addEventListener("DOMContentLoaded", () => {
             ".third-example-content-header": "ИЗВИВАЮЩАЯСЯ ЛЕСТНИЦА",
             ".third-example-content-text":
                 "Скульптурная лестница, архитектурное заявление.",
+
+            //featured projects
+            ".projects-text-header": "Избранные проекты",
+            ".projects-text-desc":
+                "Некоторые из последних и величайших проектов от нас, Wishbone+Partners.",
+            ".projects-content-button-text": "Посмотреть все.",
         },
     };
 
