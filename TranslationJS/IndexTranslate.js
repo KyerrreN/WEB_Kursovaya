@@ -88,6 +88,19 @@ document.addEventListener("DOMContentLoaded", () => {
             ".first-example-content-name": "REEDING HOUSE",
             ".first-example-content-desc":
                 "Modern, eco-friendly, minimalist design.",
+
+            //our process
+            ".our-process-content-text-header": "OUR PROCESS",
+            ".our-process-content-text-desc": "How we do what we do.",
+            "#our-process-content-desc-sketching": "Sketching",
+            "#our-process-content-desc-left":
+                "Wishbone's design process starts with detailed sketching, capturing concepts and iterating ideas on paper before construction.",
+            "#our-process-content-desc-finalizing": "Finalizing",
+            "#our-process-content-desc-middle":
+                "Wishbone carefully finalizes plans, ensuring every design element aligns with client vision and sustainability goals",
+            "#our-process-content-desc-building": "Building",
+            "#our-process-content-desc-right":
+                "Wishbone expertly oversees construction, translating designs into sustainable, functional buildings.",
         },
         ru: {
             //modal
@@ -152,6 +165,19 @@ document.addEventListener("DOMContentLoaded", () => {
             ".first-example-content-name": "ИЗВИЛИСТЫЙ ДОМ",
             ".first-example-content-desc":
                 "Современный, экологичный, минималистичный дизайн.",
+
+            //our process
+            ".our-process-content-text-header": "НАШ ПРОЦЕСС",
+            ".our-process-content-text-desc": "Как мы это делаем.",
+            "#our-process-content-desc-sketching": "Скетч",
+            "#our-process-content-desc-left":
+                "Процесс проектирования Wishbone начинается с эскизов, где на бумаге фиксируются концепции и идеи, прежде чем переходить к строительству.",
+            "#our-process-content-desc-finalizing": "Финиш",
+            "#our-process-content-desc-middle":
+                "Wishbone тщательно завершает разработку планов, гарантируя, что каждый элемент дизайна согласован с видением клиента и целями устойчивости.",
+            "#our-process-content-desc-building": "Построение",
+            "#our-process-content-desc-right":
+                "Wishbone профессионально контролирует строительство, воплощая проекты в устойчивые, функциональные здания.",
         },
     };
 
