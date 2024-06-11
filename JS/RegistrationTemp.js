@@ -486,6 +486,7 @@ toRegister.addEventListener("click", () => {
         false,
         false,
         false,
+        false,
     ];
     let isValid = true;
 
