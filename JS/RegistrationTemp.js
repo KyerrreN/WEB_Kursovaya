@@ -12,6 +12,8 @@ const inputNickname = document.querySelector("#r-nickname");
 const nicknameRND = document.querySelector("#rnd-nickname");
 const toRegister = document.querySelector(".auth-right-button");
 
+let generateCount = 0;
+
 inputPhone.addEventListener("input", () => {
     const errorPhone = document.querySelector("#register-error-phone");
 
@@ -250,35 +252,41 @@ inputNickname.addEventListener("input", () => {
     }
 });
 nicknameRND.addEventListener("click", () => {
-    let nickname = document.querySelector("#r-nickname");
-    nickname.value = generateNickname();
+    if (generateCount < 5) {
+        let nickname = document.querySelector("#r-nickname");
+        nickname.value = generateNickname();
 
-    const errorNickname = document.querySelector("#register-error-nickname");
+        const errorNickname = document.querySelector(
+            "#register-error-nickname"
+        );
 
-    if (!validateNickname()) {
-        errorNickname.style.display = "block";
+        if (!validateNickname()) {
+            errorNickname.style.display = "block";
 
-        if (
-            localStorage.getItem("lang") === "en" ||
-            localStorage.getItem("lang") === null
-        ) {
-            errorNickname.innerHTML = "Nickname is invalid";
+            if (
+                localStorage.getItem("lang") === "en" ||
+                localStorage.getItem("lang") === null
+            ) {
+                errorNickname.innerHTML = "Nickname is invalid";
+            } else {
+                errorNickname.innerHTML = "Никнейм не соответствует шаблону";
+            }
+        } else if (!checkNicknameIfTaken()) {
+            errorNickname.style.display = "block";
+
+            if (
+                localStorage.getItem("lang") === "en" ||
+                localStorage.getItem("lang") === null
+            ) {
+                errorNickname.innerHTML = "Nickname is taken";
+            } else {
+                errorNickname.innerHTML = "Никнейм уже занят";
+            }
         } else {
-            errorNickname.innerHTML = "Никнейм не соответствует шаблону";
+            errorNickname.style.display = "none";
         }
-    } else if (!checkNicknameIfTaken()) {
-        errorNickname.style.display = "block";
 
-        if (
-            localStorage.getItem("lang") === "en" ||
-            localStorage.getItem("lang") === null
-        ) {
-            errorNickname.innerHTML = "Nickname is taken";
-        } else {
-            errorNickname.innerHTML = "Никнейм уже занят";
-        }
-    } else {
-        errorNickname.style.display = "none";
+        generateCount++;
     }
 });
 
