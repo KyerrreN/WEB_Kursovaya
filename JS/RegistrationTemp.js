@@ -287,6 +287,17 @@ nicknameRND.addEventListener("click", () => {
         }
 
         generateCount++;
+    } else {
+        if (
+            localStorage.getItem("lang") === "en" ||
+            localStorage.getItem("lang") === null
+        ) {
+            alert(
+                "You have exceeded nickname generation attempts.\nOnly 5 attempts allowed."
+            );
+        } else {
+            alert("Никнейм можно сгенерировать только 5 раз.");
+        }
     }
 });
 
