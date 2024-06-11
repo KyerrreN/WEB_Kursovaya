@@ -12,6 +12,16 @@ const inputNickname = document.querySelector("#r-nickname");
 const nicknameRND = document.querySelector("#rnd-nickname");
 const toRegister = document.querySelector(".auth-right-button");
 
+// restrict pasting into password inputs
+inputPass.addEventListener("paste", () => {
+    event.preventDefault();
+});
+
+inputPassConfirm.addEventListener("paste", () => {
+    event.preventDefault();
+});
+
+// validation
 let generateCount = 0;
 
 inputPhone.addEventListener("input", () => {
