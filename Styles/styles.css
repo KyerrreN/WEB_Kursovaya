@@ -1,10 +1,10 @@
 @font-face {
     font-family: "Poppins";
-    src: url(Fonts/Poppins.ttf);
+    src: url(../Fonts/Poppins.ttf);
 }
 @font-face {
     font-family: "Roboto";
-    src: url(Fonts/Roboto.ttf);
+    src: url(../Fonts/Roboto.ttf);
 }
 /* ---------------------------------------------------------------------------- */
 /*                      Модальное окно */
@@ -216,11 +216,8 @@ body {
 .header-content-nav-projects {
     width: 61px;
 }
-.header-content-nav-about {
-    width: 46px;
-}
 .header-content-nav-news {
-    width: 40px;
+    width: 43px;
 }
 .header-content-nav-team {
     width: 44px;
@@ -360,7 +357,7 @@ body {
 }
 
 #main-picture {
-    background: url(Pictures/Main/IMAGE.svg);
+    background: url(../Pictures/Main/IMAGE.svg);
     width: 100%;
     height: auto;
 }
@@ -446,7 +443,7 @@ body {
     height: 600px;
     flex-shrink: 0;
 
-    background-image: url(Pictures/FirstExample/IMAGE.svg);
+    background-image: url(../Pictures/FirstExample/IMAGE.svg);
     background-repeat: no-repeat;
 }
 
@@ -623,7 +620,7 @@ body {
     height: 600px;
     flex-shrink: 0;
 
-    background-image: url(Pictures/SecondExample/IMAGE.png);
+    background-image: url(../Pictures/SecondExample/IMAGE.png);
 }
 .second-example-content {
     display: inline-flex;
@@ -733,7 +730,7 @@ body {
     height: 600px;
     flex-shrink: 0;
 
-    background-image: url(Pictures/ThirdExample/IMAGE.svg);
+    background-image: url(../Pictures/ThirdExample/IMAGE.svg);
     background-repeat: no-repeat;
 }
 .third-example-content {
@@ -840,13 +837,13 @@ body {
     flex-shrink: 0;
 }
 .projects-examples-first {
-    background-image: url(Pictures/Projects/First.svg);
+    background-image: url(../Pictures/Projects/First.svg);
 }
 .projects-examples-second {
-    background-image: url(Pictures/Projects/Second.svg);
+    background-image: url(../Pictures/Projects/Second.svg);
 }
 .projects-examples-third {
-    background-image: url(Pictures/Projects/Third.svg);
+    background-image: url(../Pictures/Projects/Third.svg);
 }
 .projects-examples-second-header {
     width: 88px;
@@ -1798,7 +1795,7 @@ a:hover {
 
 /* 4 */
 .firm-content-desc-text {
-    background-image: linear-gradient(90deg, red, blue);
+    background-image: linear-gradient(90deg, grey, rgb(150, 125, 125));
     background-size: 100% 3px;
     background-repeat: no-repeat;
     background-position: left bottom;

@@ -5,6 +5,6 @@ document.addEventListener("DOMContentLoaded", () => {
         localStorage.clear();
 
         alert("You will be redirected to the main page");
-        window.location.href = "../index.html";
+        window.location.href = "index.html";
     });
 });
